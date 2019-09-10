@@ -46,17 +46,16 @@ main {
 
 /* Temp inline list overrides */
 .grav-c-list-inline-row {
-  flex-wrap: nowrap;
   margin-left: 0;
   margin-bottom: 6rem;
+
+  @media (min-width: 44rem) {
+    flex-wrap: nowrap;
+  }
 
   > li {
    display: flex;
    flex-direction: column;
-
-    & + li {
-      padding-left: 1rem;
-    }
 
     img {
       max-width: 100%;

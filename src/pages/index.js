@@ -40,7 +40,7 @@ const IndexPage = () => (
       </div>
     </section>
     <section className="c7-features grav-u-pt-xxl grav-u-pb-xxl">
-      <div className="">
+      <div className="grav-o-full-bleed__content">
         <ul class="grav-c-list-inline-row">
           <li>
             <img src={StickiesOnBoard} alt="" />
