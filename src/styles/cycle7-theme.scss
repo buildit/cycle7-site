@@ -1,0 +1,24 @@
+/* Paterns or overrides that are very specific to Cycle7 site MVP */
+
+h2 {
+  font-size: var(--grav-fs-plus-4);
+}
+
+.c7-features {
+  background: #edfbff;
+
+  .grav-c-list-inline-row > li {
+    > img {
+      min-height: 350px;
+      max-width: 450px;
+      align-self: center;
+      background: white;
+      border: solid white;
+      border-width: 0 25px;
+    }
+
+    > span {
+      font-size: 2rem;
+    }
+  }
+}
