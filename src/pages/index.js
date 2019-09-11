@@ -1,16 +1,5 @@
 import React from "react";
 import Layout from "../components/layout";
-<<<<<<< Updated upstream
-import Hero from "../components/hero";
-import Phases from "../components/phases";
-import Outcomes from "../components/outcomes";
-
-const IndexPage = () => (
-  <Layout>
-    <Hero />
-    <Phases />
-    <Outcomes />
-=======
 import Cycle7Logo from "../images/cycle7-logo-alt.svg";
 import Cycle7LogoText from "../images/cycle7-logo-text.svg";
 import WeeklySchedule from "../images/7-week-schedule.svg";
@@ -111,7 +100,6 @@ const IndexPage = () => (
     <section>
       <ContentCard></ContentCard>
     </section>
->>>>>>> Stashed changes
   </Layout>
 );
 

@@ -28,11 +28,7 @@ const Layout = ({ children }) => (
       <>
         <Helmet
           bodyAttributes={{
-<<<<<<< Updated upstream
-            class: "grav-o-full-bleed"
-=======
             class: 'grav-o-full-bleed'
->>>>>>> Stashed changes
           }}
         />
         <Header siteTitle={data.site.siteMetadata.title} />
