@@ -1,11 +1,9 @@
 import React from 'react';
 
-import contentCardStyles from './contentCard.scss';
-
 const ContentCard = () => {
 
     return (
-        <div className={contentCardStyles.container}>
+        <div className='contentCard'>
             <h1>Card Title</h1>
         </div>
     );
