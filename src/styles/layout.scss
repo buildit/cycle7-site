@@ -1,11 +1,23 @@
+// @media (min-width: 44rem) {
+//   .grav-o-layout {
+//     display: grid;
+//     grid-column-gap: 2.5rem;
 
-@media (min-width: 44rem) {
-  .grav-o-layout {
-    display: grid;
-    grid-column-gap: 2.5rem;
+//     &--half {
+//       grid-template-columns: 1fr 1fr;
+//     }
 
-    &--half {
-      grid-template-columns: 1fr 1fr;
-    }
+//     &--third {
+//       grid-template-columns: repeat(3, 1fr);
+//     }
+//   }
+// }
+
+.grav-o-three-column {
+  @media (min-width: grav-breakpoint(small)) {
+    @include grav-l-column-layout(2);
+  }
+  @media (min-width: grav-breakpoint(medium)) {
+    @include grav-l-column-layout(3, $additive: true);
   }
 }

@@ -9,6 +9,7 @@ import ReportsAndFindings from "../images/reports-and-findings.svg";
 import StickiesOnBoard from "../images/stickies-on-board.svg";
 import Prototyping from "../images/prototyping.svg";
 import Measure from "../images/measure.svg";
+import Conditions from "../components/conditions";
 
 const IndexPage = () => (
   <Layout>
@@ -18,7 +19,8 @@ const IndexPage = () => (
         <img src={Cycle7LogoText} alt="Cycle7"/>
       </div>
     </section>
-    <section className="grav-o-full-bleed__content grav-u-pt-xxl grav-u-pb-xxl">
+    <Conditions />
+    <section>
       <div className="grav-o-layout grav-o-layout--half">
         <div>
           <h4>Understand, define, make</h4>
