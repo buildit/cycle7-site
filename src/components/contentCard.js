@@ -1,10 +1,10 @@
 import React from 'react';
 
-const ContentCard = () => {
+const ContentCard = ({children}) => {
 
     return (
         <div className='contentCard'>
-            <h1>Card Title</h1>
+            {children}
         </div>
     );
 
