@@ -11,7 +11,6 @@ import { StaticQuery, graphql } from "gatsby";
 import Header from "./header";
 import Footer from "./footer";
 import Helmet from "react-helmet";
-import("../styles/index.scss");
 
 const Layout = ({ children }) => (
   <StaticQuery
