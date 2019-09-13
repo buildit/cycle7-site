@@ -1,28 +1,7 @@
 /* Paterns or overrides that are very specific to Cycle7 site MVP */
 
 .contentCard {
-    background-color: #f0f0f0;
     box-sizing: border-box;
     border-radius: 15px;
     padding: 1rem;
-
-    @media (min-width:640px) {
-        padding: 3rem;
-    }
-    
-
-    .categoryText {
-        font-size: 1rem;
-        color: #666666;
-    }
-
-    .cardTitle {
-        font-size: 2rem;
-        color: #333333;
-    }
-
-    .cardText {
-        font-size: 1rem;
-        color: #333333;
-    }
 }
