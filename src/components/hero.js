@@ -1,9 +1,7 @@
 import React from "react";
-// import HeroImgTest from "../images/hero-test.jpg";
 
 const Hero = () => (
   <section className="grav-c-hero">
-    {/* <img className="hero-img" src={HeroImgTest} alt=""/> */}
     <div className="hero-img"></div>
     <div className="grav-c-hero__container">
     <svg className="hero-logo-lockup" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 64.69">
