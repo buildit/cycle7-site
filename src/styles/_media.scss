@@ -1,0 +1,15 @@
+.media {
+  display: flex;
+  align-items: flex-start;
+  padding: 1rem;
+  margin: 0 0 1rem 0;
+  align-items: center;
+}
+.media > img {
+  width: 75px;
+  margin: 0 1rem 0 0;
+}
+.media > div {
+  flex: 1;
+  margin-top: 0;
+}
