@@ -1,0 +1,16 @@
+.contact {
+  background: url(../images/dots.svg);
+
+  h2,
+  p {
+    background: white;
+    display: inline-block;
+    padding: 5px 10px;
+  }
+
+  button {
+    background: white;
+    border: none;
+    color: var(--grav-co-grp-b-neutral);
+  }
+}
