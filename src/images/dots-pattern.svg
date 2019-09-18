@@ -1,0 +1,4 @@
+<pattern id="dots" patternUnits="userSpaceOnUse" width="4" height="4">
+  <path fill='#252525' fill-opacity='1' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'>
+</pattern>
+
