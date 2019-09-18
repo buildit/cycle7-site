@@ -1,0 +1,16 @@
+.outcome-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.outcome-list-item {
+  margin-top: 0;
+}
+
+.outcome-tick-icon {
+  max-width: 75px;
+
+  @media (max-width: grav-breakpoint(medium)) {
+    max-width: 40px;
+  }
+}

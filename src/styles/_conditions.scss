@@ -1,13 +1,32 @@
-.condition-img {
-  margin: 0 auto;
-  max-width: 75px;
-  display: block;
-}
-
 .condition-list {
   list-style: none;
 }
 
 .condition-list-item {
-  margin-top: 0;
+  display: flex;
+  align-items: flex-start;
+
+  & > div {
+    margin: 0 0 0 20px;
+  }
+
+  @media (min-width: grav-breakpoint(medium)) {
+    display: block;
+    margin-top: 0;
+
+    h4 {
+      text-align: center;
+    }
+  }
+}
+
+.condition-tick-icon {
+  max-width: 40px;
+  margin-top: -5px;
+
+  @media (min-width: grav-breakpoint(medium)) {
+    display: block;
+    margin: 0 auto 30px auto;
+    max-width: 75px;
+  }
 }

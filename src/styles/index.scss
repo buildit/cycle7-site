@@ -18,7 +18,7 @@
 
 // === Objects layer ===
 @import "gravity-ui-web/04-objects/objects.all";
-@import "layouts.scss";
+@import "media.scss";
 
 // === Components layer ===
 @import "gravity-ui-web/05-components/components.all";
@@ -33,3 +33,4 @@
 // === Components ===
 @import "conditions.scss";
 @import "hero.scss";
+@import "outcomes.scss";
