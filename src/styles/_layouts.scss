@@ -1,0 +1,5 @@
+.grav-o-three-column {
+  @media (min-width: grav-breakpoint(small)) {
+    @include grav-l-column-layout(3);
+  }
+}
