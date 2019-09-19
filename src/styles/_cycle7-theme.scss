@@ -7,7 +7,7 @@
 }
 
 .section-heading {
-  background: #00b49d;
+  background: var(--grav-co-grp-b-accent) url(../images/dots-alt.svg);
   clip-path: polygon(0 0,0 calc(100% - var(--grav-fs-plus-4)),.5rem calc(100% - var(--grav-fs-plus-4)),calc(.5rem + var(--grav-fs-plus-4)) 100%,calc(.5rem + var(--grav-fs-plus-4)*2) calc(100% - var(--grav-fs-plus-4)),100% calc(100% - var(--grav-fs-plus-4)),100% 0);
 
   @media (min-width: 44rem) {
@@ -20,7 +20,7 @@
 }
 
 .categoryText {
-  color: white;
+  color: #00483f;
   padding: 0.5em 0 1.75em;
 }
 
