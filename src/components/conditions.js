@@ -3,7 +3,7 @@ import Tick from "../images/tick.svg"
 
 const Conditions = () => (
   <section className="grav-o-full-bleed__content grav-u-pt-xxl grav-u-pb-xxl">
-    <h3 className="grav-u-pb-xxl grav-u-text-centered">What you need for a Cycle 7 project</h3>
+    <h3 className="grav-u-pb-xxl grav-u-text-centered grav-u-font-size-plus-6">What you need to run a Cycle 7</h3>
       <ul className="row condition-list">
         <li className="col-md-4 condition-list-item">
           <img src={Tick} alt="" className="condition-tick-icon"/>

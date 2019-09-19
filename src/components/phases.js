@@ -6,7 +6,7 @@ import CompileFindingsSvg from "./CompileFindingsSvg";
 
 const Phases = () => (
   <section className="grav-u-pt-xxl grav-u-pb-xxl">
-    <h2 className="grav-u-text-centered">3 Phases over 7 weeks</h2>
+    <h2 className="grav-u-text-centered grav-u-font-size-plus-6">3 Phases over 7 weeks</h2>
     <div>
       <div className="c7-phase grav-u-pb-xl">
         <div className="section-heading">
