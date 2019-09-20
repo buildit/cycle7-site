@@ -10,7 +10,7 @@ const Hero = () => (
       </g>
     </svg>
       <h1 className="hero-heading">Cycle 7</h1>
-      <p>
+      <p className="grav-u-font-size-plus-2">
         A lean understanding and rapid prototyping process broken down into <strong>3 phases</strong> of activity over <strong>7 weeks</strong>.
       </p>
     </div>

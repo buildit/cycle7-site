@@ -8,9 +8,10 @@ import Outcomes from "../components/outcomes";
 const IndexPage = () => (
   <Layout>
     <Hero />
-    <Conditions />
-    <Phases />
     <Outcomes />
+    <Phases />
+    <Conditions />
+    
   </Layout>
 );
 
