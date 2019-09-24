@@ -34,24 +34,4 @@
 @import "conditions.scss";
 @import "hero.scss";
 @import "outcomes.scss";
-// @import "strategy.scss";
-
-.strategy {
-  background: url(../images/dots.svg);
-
-  &-list {
-    list-style: none;
-  }
-
-  &-list-item {
-    margin-top: 2rem;
-  }
-
-  h3,
-  h4,
-  p {
-    background: white;
-    display: inline-block;
-    padding: 5px 10px;
-  }
-}
+@import "strategy.scss";

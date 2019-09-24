@@ -1,11 +1,19 @@
-.strategy &-list {
-  list-style: none;
+.strategy {
+  background: url(../images/dots.svg);
 
-  &-list-item:first {
+  &-list {
+    list-style: none;
+  }
+
+  &-list-item {
     margin-top: 2rem;
   }
 
-  &-strap {
-    display: block;
+  h3,
+  h4,
+  p {
+    background: white;
+    display: inline-block;
+    padding: 5px 10px;
   }
 }
