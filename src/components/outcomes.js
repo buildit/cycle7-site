@@ -4,14 +4,14 @@ import Tick from "../images/tick.svg"
 const Outcomes = () => (
   <section className="grav-o-full-bleed__content grav-u-pt-xxl grav-u-pb-xxl">
     <p>
-      The outcome from 7 weeks intensive effort yields not only results critical to end users but also discover costly issues before they become assumptions to success. Cycle 7 tests the big idea by exposing the questions that matter and focus on user value.  
+    Cycle 7 delivers value fast by getting a digital proposition in front of users to test and learn. Every proposition is handled differently, there is no "cookie-cutter approach" - we do whatever is needed to add maximum value and deliver 3 necessary outcomes.
     </p>
     <ul className="row outcome-list">
       <li className="col-md-4 outcome-list-item">
         <div class="media">
           <img src={Tick} alt="" className="outcome-tick-icon"/>
           <div>
-            <p>Validated findings through hypothesis driven experiments</p>
+            <p>Validated hypotheses using measurable experiments.</p>
           </div>
         </div>
       </li>
@@ -19,7 +19,7 @@ const Outcomes = () => (
         <div class="media">
           <img src={Tick} alt="" className="outcome-tick-icon"/>
           <div>
-            <p>Fastest possible prototyping, testing and learning</p>
+            <p>Lean but impactful prototypes that are tested with users.</p>
           </div>
         </div>
       </li>
@@ -27,7 +27,7 @@ const Outcomes = () => (
         <div class="media">
           <img src={Tick} alt="" className="outcome-tick-icon"/>
           <div>
-            <p>Quick returns find insight, pivot points and uncover no-gos</p>
+            <p>Pivot points and no-gos are uncovered. Findings are presented.</p>
           </div>
         </div>
       </li>

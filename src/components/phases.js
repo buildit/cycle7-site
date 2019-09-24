@@ -6,7 +6,9 @@ import CompileFindingsSvg from "./CompileFindingsSvg";
 
 const Phases = () => (
   <section className="grav-u-pt-xxl grav-u-pb-xxl">
-    <h2 className="grav-u-text-centered grav-u-font-size-plus-6">3 phases over 7 weeks</h2>
+    <h2 className="grav-u-text-centered grav-u-font-size-plus-6">
+      How our process works
+    </h2>
     <div>
       <div className="c7-phase grav-u-pb-xl">
         <div className="section-heading">
@@ -25,6 +27,11 @@ const Phases = () => (
                 Discovering what is unknown and important, through assumptions
                 mapping, is the key to understanding the proposition and know
                 which experiments should be prioritised.
+              </p>
+              <p className="cardText">
+                Our experienced, multi-disciplined teams allow us to ideate
+                effectively and choose the right experients, which is
+                fundamental to the rest of the process.
               </p>
             </ContentCard>
             <div className="c7-phase1-graphic">
@@ -68,11 +75,13 @@ const Phases = () => (
                 Rapid prototyping
               </h4>
               <p className="cardText">
-                Experiments consist of a meaningful experience for users in
-                order to test and learn. This is a prototype containing a narrow
-                slice of the overall proposition. Feedback between sprints leads
-                to refinement of the experiments or pivoting. Hypotheses are
-                evaluated until they are validated.
+                Experiments are essentially a meaningful experience built for
+                users in order to test and learn. This is usually a prototype
+                containing a narrow slice of the overall proposition.
+              </p>
+              <p className="cardText">
+                We replace lengthy, speculative research by instead giving users
+                a realistic view of what the proposition actually means to them.
               </p>
             </ContentCard>
             <div className="c7-graphic">
