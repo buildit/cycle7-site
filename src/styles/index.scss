@@ -37,3 +37,56 @@
 @import "outcomes.scss";
 @import "strategy.scss";
 @import "contact.scss";
+// @import "phases.scss";
+
+.mt0 {
+  margin-top: 0;
+}
+
+.phase {
+  &-heading {
+    background: url(../images/dots.svg);
+    padding: 10px 0 20px;
+  }
+  &-sub-heading {
+    display: inline-block;
+
+    .grav-u-font-size-minus-1 {
+      font-family: Wipro Akkurat TT;
+      font-weight: 300;
+      font-style: normal;
+    }
+
+    span {
+      display: inline-block;
+      background: white;
+      padding: 0 10px;
+      margin-top: 0;
+    }
+  }
+
+  &-icon {
+    max-width: 120px;
+    transform: scale(1.2) rotate(15deg);
+    margin-top: 20px;
+    fill: red;
+
+    &-experiment {
+      transform: scale(1.8) rotate(-15deg);
+      margin-top: 70px;
+    }
+
+    &-wrap {
+      // height: 175px;
+      // border: 1px solid red;
+      overflow: hidden;
+      text-align: center;
+      // padding-right: 10px;
+      margin: -40px 0 -20px;
+    }
+  }
+}
+
+[class^="col"] {
+  margin-top: 0;
+}
