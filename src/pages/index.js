@@ -5,14 +5,17 @@ import Hero from "../components/hero";
 import Phases from "../components/phases";
 import Outcomes from "../components/outcomes";
 import Strategy from "../components/strategy";
+import Contact from "../components/contact";
 
 const IndexPage = () => (
   <Layout>
     <Hero />
     <Strategy />
     <Conditions />
+    <Outcomes />  
     <Phases />
-    <Outcomes />
+    <Conditions />
+    <Contact />
   </Layout>
 );
 
