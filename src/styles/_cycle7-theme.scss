@@ -1,0 +1,104 @@
+/* Paterns or overrides that are very specific to Cycle7 site MVP */
+
+.contentCard {
+  box-sizing: border-box;
+  border-radius: 15px;
+  padding: 1rem;
+}
+
+.section-heading {
+  @include grav-color-apply('background-color', 'b', 'accent', true);
+  background-image: url(../images/dots-alt.svg);
+  clip-path: polygon(0 0,0 calc(100% - var(--grav-fs-plus-4)),.5rem calc(100% - var(--grav-fs-plus-4)),calc(.5rem + var(--grav-fs-plus-4)) 100%,calc(.5rem + var(--grav-fs-plus-4)*2) calc(100% - var(--grav-fs-plus-4)),100% calc(100% - var(--grav-fs-plus-4)),100% 0);
+
+  @media (min-width: 44rem) {
+    clip-path: polygon(0 0,0 calc(100% - var(--grav-fs-plus-4)),2rem calc(100% - var(--grav-fs-plus-4)),calc(2rem + var(--grav-fs-plus-4)) 100%,calc(2rem + var(--grav-fs-plus-4)*2) calc(100% - var(--grav-fs-plus-4)),100% calc(100% - var(--grav-fs-plus-4)),100% 0);
+  }
+
+  @media (min-width: 56rem) {
+    clip-path: polygon(0 0, 0 calc(100% - var(--grav-fs-plus-4)), 16rem calc(100% - var(--grav-fs-plus-4)), calc(16rem + var(--grav-fs-plus-4)) 100%, calc(16rem + var(--grav-fs-plus-4)*2) calc(100% - var(--grav-fs-plus-4)), 100% calc(100% - var(--grav-fs-plus-4)), 100% 0);
+  }
+}
+
+.categoryText {
+  padding: 0.5em 0 1.75em;
+  @include grav-color-apply('color', 'b', 'control-active', true);
+}
+
+h4 {
+  line-height: 1.25;
+}
+
+.c7-phase1-graphic {
+  text-align: center;
+
+  &__map {
+    padding: 1.75rem;
+    background: #f7f7f7;
+
+    .c7-assumptions-map {
+      width: 100%;
+      height: auto;
+
+      .c7-stickies {
+        path:not(.c7-fold) {
+          fill: #e0dfd4;
+        }
+      }
+
+      .c7-unknown-important {
+        path {
+          &:not(.c7-fold) {
+            fill: #f15b46;
+          }
+
+          &:nth-of-type(2) {
+            opacity: 0.9;
+          }
+
+          &:nth-of-type(3) {
+            opacity: 0.7;
+          }
+
+          &:nth-of-type(4) {
+            opacity: 0.4;
+          }
+        }
+      }
+    }
+  }
+
+  > div {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    margin-top: 0;
+  }
+
+  &__arrow {
+    display: inline-block;
+    margin-top: 0.5rem;
+
+    >svg {
+      width: 40px;
+      height: auto;
+    }
+  }
+
+  &__outcome {
+    display: inline-block;
+    padding: 0.75rem 1.25rem;
+    margin-top: 0;
+    border: 2px solid black;
+    font-size: 1rem;
+    width: 31%;
+  }
+}
+
+.c7-phase-2 .c7-graphic {
+  display: flex;
+
+  > img {
+    align-self: center;
+  }
+}

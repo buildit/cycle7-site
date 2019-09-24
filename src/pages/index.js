@@ -9,9 +9,9 @@ import Contact from "../components/contact";
 const IndexPage = () => (
   <Layout>
     <Hero />
-    <Conditions />
+    <Outcomes />  
     <Phases />
-    <Outcomes />
+    <Conditions />
     <Contact />
   </Layout>
 );

@@ -1,0 +1,12 @@
+.grav-o-three-column {
+  @media (min-width: grav-breakpoint(medium)) {
+    @include grav-l-column-layout(3);
+  }
+}
+
+.grav-o-two-column-alt {
+  @media (min-width: grav-breakpoint(large)) {
+    @include grav-l-column-layout(2);
+  }
+}
+
