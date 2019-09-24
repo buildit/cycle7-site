@@ -1,0 +1,11 @@
+.strategy &-list {
+  list-style: none;
+
+  &-list-item:first {
+    margin-top: 2rem;
+  }
+
+  &-strap {
+    display: block;
+  }
+}
