@@ -14,22 +14,22 @@ const Phases = () => (
         <div className="phase-heading">
           <div className="grav-o-full-bleed__content">
             <div className="row">
-              <div className="col-md-4">
+              <div className="col hide-sm">
                 <div className="phase-icon-wrap">
-                  <svg className="phase-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 98.52 157.77">
+                  <svg className="phase-icon phase-icon-idea" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 98.52 157.77">
                     <g>
                       <path d="M49 6.55a42.75 42.75 0 0 1 34.4 68.51 56 56 0 0 0-10.68 33.2 3.29 3.29 0 0 1-3.27 3.31l-39.45.27a3.26 3.26 0 0 1-3.3-3.26 56 56 0 0 0-11.14-33.06A42.73 42.73 0 0 1 49 6.55zm0 9.87a3.11 3.11 0 0 0-3.26 3.31A3.17 3.17 0 0 0 49.09 23a26.24 26.24 0 0 1 26.47 26.1 3.29 3.29 0 1 0 6.57-.1A32.91 32.91 0 0 0 49 16.42zM48.92 0A49.26 49.26 0 0 0 9.48 78.35a49.46 49.46 0 0 1 10.63 30.28 9.85 9.85 0 0 0 9.89 9.78l39.43-.27a9.87 9.87 0 0 0 9.79-9.93 49.51 49.51 0 0 1 10.21-30.45A49.23 49.23 0 0 0 48.92 0zM30.09 125a3.29 3.29 0 1 0-.05 6.57h.09l39.43-.28a3.29 3.29 0 0 0 0-6.57h-.09zm.09 13.14a3.29 3.29 0 1 0-.05 6.57h.1l39.42-.28a3.29 3.29 0 0 0 0-6.57h-.09zm10 13.07a3.29 3.29 0 0 0-.05 6.57h.1l19.71-.13a3.29 3.29 0 0 0 0-6.58h-.1z"/>
                     </g>
                   </svg>
                 </div>
               </div>
-              <div className="col-md-4">
+              <div className="col">
                 <h3 className="phase-sub-heading">
                   <span className="grav-u-font-size-minus-1">Phase One</span><br />
                   <span>Ideate</span>
                 </h3>
               </div>
-              <div className="col-md-4">
+              <div className="col">
                 <h3 className="phase-sub-heading mt0">
                   <span className="grav-u-font-size-minus-1">1x sprint</span><br />
                   <span className="block">2 weeks</span>
@@ -88,7 +88,7 @@ const Phases = () => (
       <div className="phase-heading">
           <div className="grav-o-full-bleed__content">
             <div className="row">
-              <div className="col-md-4">
+              <div className="col hide-sm">
                 <div className="phase-icon-wrap">
                 <svg className="phase-icon phase-icon-experiment" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 145.86 150.56">
                   <defs/>
@@ -102,13 +102,13 @@ const Phases = () => (
                 </svg>
                 </div>
               </div>
-              <div className="col-md-4">
+              <div className="col">
                 <h3 className="phase-sub-heading">
                   <span className="grav-u-font-size-minus-1">Phase Two</span><br />
                   <span>Experiment</span>
                 </h3>
               </div>
-              <div className="col-md-4">
+              <div className="col">
                 <h3 className="phase-sub-heading mt0">
                   <span className="grav-u-font-size-minus-1">2x sprints</span><br />
                   <span className="block">4 weeks</span>
@@ -140,10 +140,36 @@ const Phases = () => (
         </div>
       </div>
       <div className="c7-phase grav-u-pb-xl">
-        <div className="section-heading">
-          <h3 className="categoryText grav-o-full-bleed__content">
-            <b>Phase 3: &nbsp;</b>week 7
-          </h3>
+      <div className="phase-heading">
+          <div className="grav-o-full-bleed__content">
+            <div className="row">
+              <div className="col hide-sm">
+                <div className="phase-icon-wrap">
+                <svg className="phase-icon phase-icon-analyse" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 101.31 163.89">
+                  <defs/>
+                  <g>
+                    <g>
+                      <path d="M98.7 56.8H21.37a1.7 1.7 0 0 1-1.21-.51L10.38 46a1.68 1.68 0 1 1 2.44-2.31l9.28 9.72h75V14.58a1.68 1.68 0 1 1 3.35 0v40.54a1.73 1.73 0 0 1-1.75 1.68zM5 39.67a1.66 1.66 0 0 1-1.2-.5L.46 35.69a1.68 1.68 0 0 1 2.44-2.32l3.35 3.49a1.69 1.69 0 0 1-.06 2.38 2 2 0 0 1-1.19.43zm5.83-12.8a1.71 1.71 0 0 1-1.17-.47 1.65 1.65 0 0 1 0-2.37L20.19 13.4a1.63 1.63 0 0 1 1.21-.5h65.11a1.68 1.68 0 0 1 0 3.35H22L12 26.37a1.56 1.56 0 0 1-1.16.5zM79.71 106.93H2.37a1.66 1.66 0 0 1-1.68-1.68V91.88a1.66 1.66 0 0 1 1.68-1.67A1.65 1.65 0 0 1 4 91.88v11.7h75l18.26-18.27-13.53-14.17a1.68 1.68 0 1 1 2.44-2.31l14.68 15.38a1.68 1.68 0 0 1 0 2.34l-19.97 19.91a1.68 1.68 0 0 1-1.17.47zM2.37 83.54a1.66 1.66 0 0 1-1.68-1.68V64.71A1.66 1.66 0 0 1 2.37 63h77.57a1.68 1.68 0 1 1 0 3.35H4v15.51a1.66 1.66 0 0 1-1.63 1.68z"/>
+                      <path d="M59.06 163.89h-4.29a1.68 1.68 0 0 1 0-3.35h2.62v-6.37a1.68 1.68 0 0 1 3.35 0v8.05a1.66 1.66 0 0 1-1.68 1.67zm-17.09 0a1.66 1.66 0 0 1-1.67-1.67v-57a1.65 1.65 0 0 1 1.7-1.64h17.1a1.65 1.65 0 0 1 1.67 1.67v39.54a1.68 1.68 0 1 1-3.35 0v-37.86H43.65v55.29a1.68 1.68 0 0 1-1.65 1.67zm17.09-97.51H41.94a1.65 1.65 0 0 1-1.67-1.67v-9.59a1.65 1.65 0 0 1 1.67-1.67h17.12a1.66 1.66 0 0 1 1.68 1.67v9.59a1.66 1.66 0 0 1-1.68 1.67zM43.65 63h13.77v-6.2H43.65zm15.41-46.75H41.94a1.65 1.65 0 0 1-1.67-1.67v-4.23A10.38 10.38 0 0 1 50.62 0a9.89 9.89 0 0 1 7.27 3.05 10.46 10.46 0 0 1 2.85 7.3v4.23a1.66 1.66 0 0 1-1.68 1.67zM43.65 12.9h13.77v-2.55a7.19 7.19 0 0 0-1.91-5 6.56 6.56 0 0 0-4.86-2 7 7 0 0 0-7 7z"/>
+                    </g>
+                  </g>
+                </svg>
+                </div>
+              </div>
+              <div className="col">
+                <h3 className="phase-sub-heading">
+                  <span className="grav-u-font-size-minus-1">Phase Three</span><br />
+                  <span>Analyse</span>
+                </h3>
+              </div>
+              <div className="col">
+                <h3 className="phase-sub-heading mt0">
+                  <span className="grav-u-font-size-minus-1">1x sprint</span><br />
+                  <span className="block">1 week</span>
+                </h3>
+              </div>
+            </div>
+          </div>
         </div>
         <div className="grav-o-full-bleed__content">
           <div className="grav-o-two-column">
