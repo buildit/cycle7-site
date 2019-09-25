@@ -1,8 +1,31 @@
 .phase {
   &-heading {
     background: url(../images/dots.svg);
-    padding: 10px 0 20px;
+    padding: 20px 0;
+
+    @media (min-width: grav-breakpoint(medium)) {
+      padding: 0;
+      border-top: 40px solid white;
+      box-shadow: 0px -40px 0px white inset;
+
+      &-content {
+        background: url(../images/bulb.svg) no-repeat 100px 0;
+        background-size: contain;
+        padding: 40px 0;
+        position: relative;
+        top: -40px;
+
+        &--test {
+          background-image: url(../images/test.svg);
+        }
+
+        &--sign {
+          background-image: url(../images/sign.svg);
+        }
+      }
+    }
   }
+
   &-sub-heading {
     display: inline-block;
 
@@ -17,33 +40,6 @@
       background: white;
       padding: 0 10px;
       margin-top: 0;
-    }
-  }
-
-  &-icon {
-    max-width: 120px;
-    fill: var(--grav-co-grp-b-control);
-    opacity: 0.25;
-
-    &-wrap {
-      overflow: hidden;
-      text-align: center;
-      margin: -40px 0 -20px;
-    }
-
-    &-idea {
-      transform: scale(1.2) rotate(15deg);
-      margin-top: 20px;
-    }
-
-    &-experiment {
-      transform: scale(1.8) rotate(-15deg);
-      margin-top: 70px;
-    }
-
-    &-analyse {
-      transform: scale(1.4) rotate(5deg);
-      margin-top: 40px;
     }
   }
 }
