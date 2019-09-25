@@ -10,9 +10,9 @@ import Contact from "../components/contact";
 const IndexPage = () => (
   <Layout>
     <Hero />
+    <Outcomes />
     <Strategy />
     <Conditions />
-    <Outcomes />  
     <Phases />
     <Conditions />
     <Contact />

@@ -11,3 +11,19 @@ main {
 .grav-c-page-footer {
   border-bottom: none;
 }
+
+// bootstrap overrides
+.mt0 {
+  margin-top: 0;
+}
+
+[class^="col"] {
+  margin-top: 0;
+}
+
+// utils
+@media (max-width: grav-breakpoint(medium)) {
+  .hide-sm {
+    display: none;
+  }
+}
