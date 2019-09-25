@@ -7,7 +7,7 @@ const Contact = () => (
       <p>
         Messages come direct to us as a team so we endeavour to answer any questions and help with any requests very quickly. 
       </p>
-      <button className="grav-u-font-size-plus-3">&#128073; Contact us</button>
+      <button className="grav-u-font-size-plus-3"><span role="img" aria-label="finger pointing right">&#x26A1;</span> Contact us</button>
     </section>
   </div>
 );
