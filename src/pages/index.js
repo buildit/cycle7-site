@@ -12,7 +12,6 @@ const IndexPage = () => (
     <Hero />
     <Outcomes />
     <Strategy />
-    <Conditions />
     <Phases />
     <Conditions />
     <Contact />
