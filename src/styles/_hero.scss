@@ -1,6 +1,7 @@
 #hero-logo-lockup {
   max-width: 400px;
-  fill: var(--grav-co-grp-b-neutral);
+  // fill: var(--grav-co-grp-b-neutral);
+  fill: var(--grav-co-grp-b-control-emphasis);
 }
 
 .hero-heading {
@@ -14,8 +15,16 @@
   position: absolute;
 }
 
+.grav-c-hero .grav-c-hero__container {
+  max-width: 40rem;
+}
+
 .hero-dots {
   width: 100%;
   height: 300px;
-  background: url(../images/dots.svg);
+  background: url(../images/dots.svg),
+    linear-gradient(
+      var(--grav-co-grp-a-accent),
+      var(--grav-co-grp-b-control-emphasis)
+    );
 }

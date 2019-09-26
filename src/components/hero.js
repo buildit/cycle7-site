@@ -11,7 +11,7 @@ const Hero = () => (
     </svg>
       <h1 className="hero-heading">Cycle 7</h1>
       <p className="grav-u-font-size-plus-2">
-        A human-centred, rapid prototyping process broken down into <strong>3 phases</strong> of activity over <strong>7 weeks</strong>.
+        A rapid innovation process guaranteed to deliver
       </p>
     </div>
   </section>
