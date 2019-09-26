@@ -1,6 +1,6 @@
 .phase {
   &-heading {
-    background: url(../images/dots.svg);
+    background: url(../images/dots.svg) fixed;
     padding: 20px 0;
 
     @media (min-width: grav-breakpoint(medium)) {
