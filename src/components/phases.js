@@ -14,16 +14,18 @@ const Phases = () => (
         <div className="phase-heading">
           <div className="grav-o-full-bleed__content">
             <div className="row phase-heading-content phase-heading-content--bulb">
-            <div className="col hide-sm"></div>
+              <div className="col hide-sm"></div>
               <div className="col">
                 <h3 className="phase-sub-heading">
-                  <span className="grav-u-font-size-minus-1">Phase One</span><br />
+                  <span className="grav-u-font-size-minus-1">Phase One</span>
+                  <br />
                   <span>Ideate</span>
                 </h3>
               </div>
               <div className="col">
                 <h3 className="phase-sub-heading mt0">
-                  <span className="grav-u-font-size-minus-1">1x sprint</span><br />
+                  <span className="grav-u-font-size-minus-1">1x sprint</span>
+                  <br />
                   <span className="block">2 weeks</span>
                 </h3>
               </div>
@@ -77,19 +79,21 @@ const Phases = () => (
         </div>
       </div>
       <div className="c7-phase grav-u-pb-xl">
-      <div className="phase-heading">
+        <div className="phase-heading">
           <div className="grav-o-full-bleed__content">
             <div className="row phase-heading-content phase-heading-content--test">
-            <div className="col hide-sm"></div>
+              <div className="col hide-sm"></div>
               <div className="col">
                 <h3 className="phase-sub-heading">
-                  <span className="grav-u-font-size-minus-1">Phase Two</span><br />
+                  <span className="grav-u-font-size-minus-1">Phase Two</span>
+                  <br />
                   <span>Experiment</span>
                 </h3>
               </div>
               <div className="col">
                 <h3 className="phase-sub-heading mt0">
-                  <span className="grav-u-font-size-minus-1">2x sprints</span><br />
+                  <span className="grav-u-font-size-minus-1">2x sprints</span>
+                  <br />
                   <span className="block">4 weeks</span>
                 </h3>
               </div>
@@ -119,19 +123,21 @@ const Phases = () => (
         </div>
       </div>
       <div className="c7-phase grav-u-pb-xl">
-      <div className="phase-heading">
+        <div className="phase-heading">
           <div className="grav-o-full-bleed__content">
             <div className="row phase-heading-content phase-heading-content--sign">
               <div className="col hide-sm"></div>
               <div className="col">
                 <h3 className="phase-sub-heading">
-                  <span className="grav-u-font-size-minus-1">Phase Three</span><br />
+                  <span className="grav-u-font-size-minus-1">Phase Three</span>
+                  <br />
                   <span>Analyse</span>
                 </h3>
               </div>
               <div className="col">
                 <h3 className="phase-sub-heading mt0">
-                  <span className="grav-u-font-size-minus-1">1x sprint</span><br />
+                  <span className="grav-u-font-size-minus-1">1x sprint</span>
+                  <br />
                   <span className="block">1 week</span>
                 </h3>
               </div>
@@ -145,10 +151,17 @@ const Phases = () => (
                 Compile the findings
               </h4>
               <p className="cardText">
-                Findings are formatted so that they can easily be communicated
-                with others. This includes presenting data that was gathered
-                during user testing, in order to demonstrate the hypothesis has
-                been validated.
+                Findings are formatted to make it easy to communicate them to
+                others. This includes presenting data gathered during user
+                testing that demonstrates that the hypotheses were validated.
+              </p>
+              <p>
+                We ensure that a strategy for moving forward is made clear. This
+                could include providing a well-defined backlog, technical
+                decisions and continued support for scaling the proposal. In the
+                case of uncovering pivot points or no-gos, we reinforce this as
+                a positive outcome by identifying any further experiments or
+                propositions.
               </p>
             </ContentCard>
             <div>
