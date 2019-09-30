@@ -4,7 +4,7 @@ const Strategy = () => (
   <section className="strategy">
     <div className="grav-o-full-bleed__content grav-u-pt-xxl grav-u-pb-xxl">
       <div className="grav-u-text-centered">
-        <h3>How Cycle 7 Delivers</h3>
+        <h3>Discover and Deliver</h3>
       </div>
         <ul className="row strategy-list">
           <li className="col-md-4 strategy-list-item">
