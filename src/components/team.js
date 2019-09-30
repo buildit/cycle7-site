@@ -1,7 +1,6 @@
 import React from "react";
-import Tick from "../images/tick.svg";
 
-const Conditions = () => (
+const Team = () => (
   <section className="grav-o-full-bleed__content grav-u-pt-xxl">
     <h3 className="grav-u-text-centered grav-u-font-size-plus-4">
       Better Together
@@ -15,20 +14,20 @@ const Conditions = () => (
       </p>
     </div>
     <div className="row">
-      <div className="col text-right">
-        <h4 className="grav-u-font-size-minus-2 condition-members">
+      <div className="col team-text-right">
+        <h4 className="grav-u-font-size-minus-2 team-members">
           Members from Client
         </h4>
-        <ul className="no-bullets">
+        <ul className="team-no-bullets">
           <li>Product Owner</li>
           <li>Business Analyst</li>
         </ul>
       </div>
-      <div className="col condition-border-left">
-        <h4 className="grav-u-font-size-minus-2 condition-members">
+      <div className="col team-border-left">
+        <h4 className="grav-u-font-size-minus-2 team-members">
           Members from Buildit
         </h4>
-        <ul className="no-bullets">
+        <ul className="team-no-bullets">
           <li>Creative Technologist x2</li>
           <li>UX Designer</li>
           <li>Experience Designer</li>
@@ -36,7 +35,21 @@ const Conditions = () => (
         </ul>
       </div>
     </div>
+    <div className="row grav-u-pt-xl">
+      <div className="col-md-5 offset-md-1 team-left-col">
+        <p>
+          You commit people and resources in a shared location to eliminate
+          needless gaps and dependencies.
+        </p>
+      </div>
+      <div className="col-md-5 team-right-col">
+        <p>
+          We help shape the proposal so you gain better results for steering
+          your business decision making.
+        </p>
+      </div>
+    </div>
   </section>
 );
 
-export default Conditions;
+export default Team;

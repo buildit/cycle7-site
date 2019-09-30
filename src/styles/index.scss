@@ -32,42 +32,9 @@
 @import "gravity-overrides.scss";
 
 // === Components ===
-@import "conditions.scss";
+@import "team.scss";
 @import "hero.scss";
 @import "outcomes.scss";
 @import "strategy.scss";
 @import "contact.scss";
 @import "phases.scss";
-
-.text-right {
-  text-align: right;
-  padding: 0 40px;
-}
-
-.no-bullets,
-.no-bullets li {
-  list-style: none;
-  padding-left: 0;
-}
-
-.condition-border-left {
-  border-left: 1px solid var(--grav-co-grp-b-control-emphasis);
-  padding: 0 40px;
-}
-
-.condition-members {
-  color: var(--grav-co-grp-b-control-emphasis);
-}
-
-.team-shape {
-  // background: rgba(#3d8b7c, 0.1);
-}
-
-.team-shape-left-col {
-  text-align: right;
-  padding-right: 40px;
-}
-
-.team-shape-right-col {
-  padding-left: 40px;
-}
