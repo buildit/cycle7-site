@@ -3,7 +3,7 @@ import Tick from "../images/tick.svg"
 
 const Outcomes = () => (
   <section className="grav-o-full-bleed__content grav-u-pt-xxl grav-u-pb-xxl">
-    <p className="outcome-lead-text">
+    <p className="lead-text">
       Standalone, or within a programme, Cycle 7 de-risks any given proposition and exposes the answers stakeholders need to know. Fast.
     </p>
     <ul className="row outcome-list">

@@ -1,50 +1,41 @@
 import React from "react";
-import Tick from "../images/tick.svg"
+import Tick from "../images/tick.svg";
 
 const Conditions = () => (
-  <section className="grav-o-full-bleed__content grav-u-pt-xxl grav-u-pb-xxl">
-    <h3 className="grav-u-pb-xxl grav-u-text-centered grav-u-font-size-plus-4">Winning Collaboration</h3>
-      <ul className="row condition-list">
-      <li className="col-md-6 condition-list-item">
-          <img src={Tick} alt="" className="condition-tick-icon"/>
-          <div>
-            <h4 className="grav-u-font-size-plus-1">Problem Shaping</h4>
-            <p>We can help define the right slice of the proposal for results that can guide business decision making. Striking only at the important and unknown to truly innovate and explore technology with as little impunity as posable.</p>
-          </div>  
-        </li>
-        <li className="col-md-6 condition-list-item">
-          <img src={Tick} alt="" className="condition-tick-icon"/>
-          <div>
-            <h4 className="grav-u-font-size-plus-1">Take the pledge</h4>
-            <p>Committing people, resources and a shared location for the full 7 weeks are key due to the rapid nature of Cycle 7 projects. We aim to eliminate unnecessary gaps and dependencies before starting.</p>
-          </div>
-        </li>
-      </ul>
-      <div className="grav-u-pt-xxl grav-u-pb-xxl">
-        <div className="grav-u-text-centered">
-          <h4 className="grav-u-font-size-plus-1">Co-creation</h4>
-          <p>A small cross skilled team of 7 people is ideal.</p>
-        </div>
-        <div className="row">
-        <div className="col text-right">
-            <p><strong>From the client</strong></p>
-            <ul className="no-bullets">
-              <li>Product Owner</li>
-              <li>Business Analyst</li>
-            </ul>
-          </div>
-          <div className="col border-left">
-            <p><strong>From our side</strong></p>
-            <ul className="no-bullets">
-              <li>Creative Technologist x2</li>
-              <li>User Experience</li>
-              <li>Experience Designer</li>
-              <li>Delivery Lead</li>
-            </ul>
-          </div>
-        </div>
+  <section className="grav-o-full-bleed__content grav-u-pt-xxl">
+    <h3 className="grav-u-text-centered grav-u-font-size-plus-4">
+      Better Together
+    </h3>
+    <div className="grav-u-text-centered">
+      <p className="lead-text lead-text-large grav-u-pb-xl">
+        Embedded as a small, agile, and cross skilled team we will understand,
+        define, and create faster. This integration with the business better
+        informs our strategy and benefits from existing stakeholder
+        relationships.
+      </p>
+    </div>
+    <div className="row">
+      <div className="col text-right">
+        <h4 className="grav-u-font-size-minus-2 condition-members">
+          Members from Client
+        </h4>
+        <ul className="no-bullets">
+          <li>Product Owner</li>
+          <li>Business Analyst</li>
+        </ul>
       </div>
-      
+      <div className="col condition-border-left">
+        <h4 className="grav-u-font-size-minus-2 condition-members">
+          Members from Buildit
+        </h4>
+        <ul className="no-bullets">
+          <li>Creative Technologist x2</li>
+          <li>UX Designer</li>
+          <li>Experience Designer</li>
+          <li>Delivery Lead</li>
+        </ul>
+      </div>
+    </div>
   </section>
 );
 

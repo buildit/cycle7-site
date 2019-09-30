@@ -6,6 +6,7 @@ import Phases from "../components/phases";
 import Outcomes from "../components/outcomes";
 import Strategy from "../components/strategy";
 import Contact from "../components/contact";
+import TeamShape from "../components/team-shape";
 
 const IndexPage = () => (
   <Layout>
@@ -13,8 +14,8 @@ const IndexPage = () => (
     <Outcomes />
     <Strategy />
     <Conditions />
+    <TeamShape />
     <Phases />
-    <Conditions />
     <Contact />
   </Layout>
 );
