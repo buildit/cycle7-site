@@ -1,17 +1,13 @@
 import React from "react";
+import BuilditLogoSvg from "./builditLogoSvg";
 
 const Footer = () => (
   <footer className="grav-c-page-footer">
-    <div className="grav-o-container">
-      <svg
-        role="img"
-        className="grav-c-logo"
-        aria-labelledby="buildit-logotype__title"
-        width="300"
-        height="33"
-      >
-        <use xlinkHref="#buildit-logotype"></use>
-      </svg>
+    <div>
+      <p>
+        Proudly produced by <br />
+        <BuilditLogoSvg />
+      </p>
       <p>
         © 2019 <strong>Buildit</strong>. All rights reserved.
       </p>
