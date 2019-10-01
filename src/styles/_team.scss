@@ -1,0 +1,43 @@
+.team-list {
+  list-style: none;
+}
+
+.team-tick-icon {
+  max-width: 40px;
+  margin-top: -5px;
+
+  @media (min-width: grav-breakpoint(medium)) {
+    display: block;
+    margin: 0 auto 30px auto;
+    max-width: 75px;
+  }
+}
+
+.team-border-left {
+  border-left: 1px solid var(--grav-co-grp-b-control-emphasis);
+  padding: 0 40px;
+}
+
+.team-members {
+  color: var(--grav-co-grp-b-control-emphasis);
+}
+
+.team-text-right {
+  text-align: right;
+  padding: 0 40px;
+}
+
+.team-no-bullets,
+.team-no-bullets li {
+  list-style: none;
+  padding: 0;
+}
+
+.team-left-col {
+  text-align: right;
+  padding-right: 40px;
+}
+
+.team-right-col {
+  padding-left: 40px;
+}

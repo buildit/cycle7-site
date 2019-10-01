@@ -1,3 +1,13 @@
+.lead-text {
+  margin: 0 auto;
+  text-align: center;
+  max-width: 50rem;
+
+  &-large {
+    max-width: 55rem;
+  }
+}
+
 .outcome-list {
   list-style: none;
   padding-left: 0;
@@ -8,7 +18,7 @@
 }
 
 .outcome-tick-icon {
-  max-width: 75px;
+  max-width: 50px;
 
   @media (max-width: grav-breakpoint(medium)) {
     max-width: 40px;

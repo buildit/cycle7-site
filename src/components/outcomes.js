@@ -3,15 +3,15 @@ import Tick from "../images/tick.svg"
 
 const Outcomes = () => (
   <section className="grav-o-full-bleed__content grav-u-pt-xxl grav-u-pb-xxl">
-    <p>
-    Cycle 7 delivers value fast by getting a digital proposition in front of users to test and learn. Every proposition is handled differently, there is no "cookie-cutter approach" - we do whatever is needed to add maximum value and deliver 3 necessary outcomes.
+    <p className="lead-text">
+      Standalone, or within a programme, Cycle 7 de-risks any given proposition and exposes the answers stakeholders need to know. Fast.
     </p>
     <ul className="row outcome-list">
       <li className="col-md-4 outcome-list-item">
         <div class="media">
           <img src={Tick} alt="" className="outcome-tick-icon"/>
           <div>
-            <p>Validated hypotheses using measurable experiments.</p>
+            <p>Pinpoint and answer the unknown, important questions.</p>
           </div>
         </div>
       </li>
@@ -19,7 +19,7 @@ const Outcomes = () => (
         <div class="media">
           <img src={Tick} alt="" className="outcome-tick-icon"/>
           <div>
-            <p>Lean but impactful prototypes that are tested with users.</p>
+            <p>Run lean impactful experiments tested directly with users.</p>
           </div>
         </div>
       </li>
@@ -27,7 +27,7 @@ const Outcomes = () => (
         <div class="media">
           <img src={Tick} alt="" className="outcome-tick-icon"/>
           <div>
-            <p>Pivot points and no-gos are uncovered. Findings are presented.</p>
+            <p>Build realistic propositions from data driven insights.</p>
           </div>
         </div>
       </li>
