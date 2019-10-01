@@ -24,7 +24,6 @@ const Phases = () => (
               </div>
               <div className="col">
                 <h3 className="phase-sub-heading mt0">
-                  <span className="grav-u-font-size-minus-1">1x sprint</span>
                   <br />
                   <span className="block">2 weeks</span>
                 </h3>
@@ -92,7 +91,7 @@ const Phases = () => (
               </div>
               <div className="col">
                 <h3 className="phase-sub-heading mt0">
-                  <span className="grav-u-font-size-minus-1">2x sprints</span>
+                  <span className="grav-u-font-size-minus-1">2 sprints</span>
                   <br />
                   <span className="block">4 weeks</span>
                 </h3>
@@ -136,7 +135,6 @@ const Phases = () => (
               </div>
               <div className="col">
                 <h3 className="phase-sub-heading mt0">
-                  <span className="grav-u-font-size-minus-1">1x sprint</span>
                   <br />
                   <span className="block">1 week</span>
                 </h3>
