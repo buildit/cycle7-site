@@ -7,7 +7,7 @@ const Team = () => (
     </h3>
     <div className="grav-u-text-centered">
       <p className="lead-text lead-text-large grav-u-pb-xl">
-        Embedded as a small, agile, and cross skilled team we will understand,
+        Embedded as a small, agile, and cross-skilled team we will understand,
         define, and create faster. This integration with the business better
         informs our strategy and benefits from existing stakeholder
         relationships.
@@ -16,7 +16,7 @@ const Team = () => (
     <div className="row">
       <div className="col team-text-right">
         <h4 className="grav-u-font-size-minus-2 team-members">
-          Members from Client
+          Your commitment
         </h4>
         <ul className="team-no-bullets">
           <li>Product Owner</li>
@@ -25,7 +25,7 @@ const Team = () => (
       </div>
       <div className="col team-border-left">
         <h4 className="grav-u-font-size-minus-2 team-members">
-          Members from Buildit
+          Our commitment
         </h4>
         <ul className="team-no-bullets">
           <li>Creative Technologist x2</li>

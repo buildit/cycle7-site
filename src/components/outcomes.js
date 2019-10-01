@@ -19,7 +19,7 @@ const Outcomes = () => (
         <div class="media">
           <img src={Tick} alt="" className="outcome-tick-icon"/>
           <div>
-            <p>Run lean impactful experiments tested direct with users.</p>
+            <p>Run lean impactful experiments tested directly with users.</p>
           </div>
         </div>
       </li>
