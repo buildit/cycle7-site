@@ -10,7 +10,7 @@ const Phases = () => (
       How our process works
     </h2>
     <div>
-      <div className="c7-phase grav-u-pb-xl">
+      <div className="c7-phase grav-u-pb-xl" data-gtm-track="phase-1">
         <div className="phase-heading">
           <div className="grav-o-full-bleed__content">
             <div className="row phase-heading-content phase-heading-content--bulb">
@@ -77,7 +77,7 @@ const Phases = () => (
           </div>
         </div>
       </div>
-      <div className="c7-phase grav-u-pb-xl">
+      <div className="c7-phase grav-u-pb-xl" data-gtm-track="phase-2">
         <div className="phase-heading">
           <div className="grav-o-full-bleed__content">
             <div className="row phase-heading-content phase-heading-content--test">
@@ -121,7 +121,7 @@ const Phases = () => (
           </div>
         </div>
       </div>
-      <div className="c7-phase grav-u-pb-xl">
+      <div className="c7-phase grav-u-pb-xl" data-gtm-track="phase-3">
         <div className="phase-heading">
           <div className="grav-o-full-bleed__content">
             <div className="row phase-heading-content phase-heading-content--sign">

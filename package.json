@@ -26,6 +26,7 @@
   },
   "devDependencies": {
     "eyeglass": "^2.4.1",
+    "gatsby-plugin-google-tagmanager": "^2.1.12",
     "prettier": "^1.17.0"
   },
   "keywords": [
