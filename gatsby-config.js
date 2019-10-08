@@ -2,19 +2,19 @@ const eyeglass = require('eyeglass');
 
 module.exports = {
   siteMetadata: {
-    title: `gatsby-example-using-markdown-pages`,
-    description: `Start your new blog using markdown files`,
-    author: `@gatsbyjs`,
+    title: `Cycle 7`,
+    description: `A rapid innovation process guaranteed to deliver`,
+    author: `@buildit_tech`,
   },
   plugins: [
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `markdown-pages`,
-        path: `${__dirname}/src/markdown-pages`,
-      },
-    },
-    `gatsby-transformer-remark`,
+    // {
+    //   resolve: `gatsby-source-filesystem`,
+    //   options: {
+    //     name: `markdown-pages`,
+    //     path: `${__dirname}/src/markdown-pages`,
+    //   },
+    // },
+    // `gatsby-transformer-remark`,
     {
       resolve: "gatsby-plugin-google-tagmanager",
       options: {
@@ -42,11 +42,11 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `Cycle 7`,
+        short_name: `C7`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
+        background_color: `#FFFFFF`,
+        theme_color: `#008d7c`,
         display: `minimal-ui`,
         icon: `src/images/gatsby-icon.png`,
       },
