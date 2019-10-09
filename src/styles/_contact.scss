@@ -16,11 +16,11 @@
   }
 
   .form-error {
-    @include grav-color-apply('color', 'b', 'accent-danger');
+    @include grav-color-apply("color", "b", "accent-danger");
   }
 
   .form-success {
-    @include grav-color-apply('color', 'b', 'accent-success');
+    @include grav-color-apply("color", "b", "accent-success");
   }
 
   .sk-three-bounce {
@@ -52,7 +52,9 @@
   }
 
   @-webkit-keyframes sk-three-bounce {
-    0%, 80%, 100% {
+    0%,
+    80%,
+    100% {
       -webkit-transform: scale(0);
       transform: scale(0);
     }
@@ -62,13 +64,38 @@
     }
   }
   @keyframes sk-three-bounce {
-    0%, 80%, 100% {
+    0%,
+    80%,
+    100% {
       -webkit-transform: scale(0);
       transform: scale(0);
     }
     40% {
       -webkit-transform: scale(1);
       transform: scale(1);
+    }
+  }
+
+  &-row * {
+    margin-top: 0.5em;
+  }
+
+  &-label {
+    display: block;
+  }
+
+  &-input {
+    max-width: unset !important;
+    border: none;
+    width: 100%;
+    padding: 0.5em !important;
+
+    &:focus {
+      outline: 1px solid var(--grav-co-grp-b-control-emphasis);
+    }
+
+    &:focus:not(:valid) {
+      outline: 1px solid red;
     }
   }
 }
