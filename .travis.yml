@@ -1,0 +1,23 @@
+language: node_js
+branches:
+  only:
+    - master
+cache:
+  npm: true
+install:
+  - npm i
+script:
+  - npm run build
+before_deploy:
+  - pip install --user awscli
+deploy:
+  - provider: s3
+    access_key_id: ${AWS_ACCESS_KEY_ID}
+    secret_access_key: ${AWS_SECRET_ACCESS_KEY}
+    bucket: ${AWS_S3_BUCKET}
+    region: ${AWS_REGION}
+    skip_cleanup: true
+    local_dir: public
+notifications:
+  slack:
+    secure: nLJvyO0wGvoJmn/MB002Mmk6fvQRta/VmGGaN1kegydNjvekOsKhnbno0XdTRCJOG3K52xX/08KSKJv7+VFzcoTBL1S98h5udDRG966OQfIEXSwfAJJqprQJf62Oj2OOaGnN9Kh6IssYU6txKH4T7HolqVqZ2xh2Uh/c2Xb8AfWs3i1PK6qMErj0HccRZGWOGtFvievv+hOE/kyeqfcblNCI+MfI3uN607t8qcHQCy+KeVpBYpkO2se6LdlRDf07plETKNJoIk63IJs9uPpvrYrZmBcFcVI66D++pLl1vdcRAnyHbdhsMkTCsSgeWT0gEIC9oFxhyw+Hlt1LxtEwI21cRMhbX9DnWofAZzNHqlkAmYhBrAOqqhaTLFJ+tD22qvvvItabLwMrbVCR5t1OpgxuXZiPeQsLYFyJfhACw9wyyjA3yOo74iDgrXsleiGrIreLKwmvRQtgdfz7uVSjFAuaO8YVP8/n5/5cNsF070vlVQxJa5iYemIB1TM9T4KJzfhkLnCEpiCPiU3rH9t73YsLpA2HXxBuZn1lqvfDq/+Ta2EGi1vM1CX9qfg3adCl41YVv9tndLVIDCCSheTbS5QVpUQGV/BsehHoA1h8MTA46Ag9e9r5JxfCEbjGOSG3wDQH3TfDpdukJar71ADEGlnQ85vr5Hr/KA+v9Pznoic=

@@ -9,7 +9,7 @@ const Footer = () => (
         <BuilditLogoSvg />
       </p>
       <p>
-        © 2019 <strong>Buildit</strong>. All rights reserved.
+        © 2019 <strong>Wipro</strong> Digital. All rights reserved.
       </p>
     </div>
   </footer>
