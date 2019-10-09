@@ -1,7 +1,7 @@
 import React from "react";
 
 const Team = () => (
-  <section className="grav-o-full-bleed__content grav-u-pt-xxl">
+  <section className="grav-o-full-bleed__content grav-u-pt-xxl" data-gtm-track="collaboration">
     <h3 className="grav-u-text-centered grav-u-font-size-plus-4">
       Better Together
     </h3>

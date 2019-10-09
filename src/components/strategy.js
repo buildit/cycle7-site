@@ -1,7 +1,7 @@
 import React from "react";
 
 const Strategy = () => (
-  <section className="strategy">
+  <section className="strategy" data-gtm-track="discover-and-deliver">
     <div className="grav-o-full-bleed__content grav-u-pt-xxl grav-u-pb-xxl">
       <div className="grav-u-text-centered">
         <h3>Discover and Deliver</h3>
