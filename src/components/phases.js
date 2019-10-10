@@ -106,8 +106,8 @@ const Phases = () => (
                 Rapid prototyping
               </h4>
               <p className="cardText">
-                Experiments are essentially a meaningful experience built for
-                users in order to test and learn. This is usually a prototype
+                Each experiment is built for users to test; and designed
+                to determine the validity of the hypothesis. This is usually a prototype
                 containing a narrow slice of the overall proposition.
               </p>
               <p className="cardText">
@@ -150,15 +150,15 @@ const Phases = () => (
               </h4>
               <p className="cardText">
                 Findings are formatted to make it easy to communicate them to
-                others. This includes presenting data gathered during user
-                testing that demonstrates that the hypotheses were validated.
+                all stakeholders. This includes presenting the data gathered during user
+                testing; demonstrating the validated hypotheses.
               </p>
               <p>
                 We ensure that a strategy for moving forward is made clear. This
                 could include providing a well-defined backlog, technical
-                decisions and continued support for scaling the proposal. In the
+                decisions, and continued support for scaling the proposal. In the
                 case of uncovering pivot points or no-gos, we reinforce this as
-                a positive outcome by identifying any further experiments or
+                a positive outcome by identifying further experiments or
                 propositions.
               </p>
             </ContentCard>
