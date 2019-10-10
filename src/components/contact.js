@@ -65,8 +65,8 @@ const Contact = () => {
         <div className="row">
           <div className="col-md-10">
             <p>
-              We can help with all aspects of sales and delivery so message the
-              team and we'll aim get back you within 24 hours.
+              We can help with all aspects of sales and delivery; so message the
+              team and we aim get back you within 24 hours.
             </p>
           </div>
         </div>

@@ -40,12 +40,12 @@ const Phases = () => (
               </h4>
               <p className="cardText">
                 Discovering what is unknown and important, through assumptions
-                mapping, is the key to understanding the proposition and know
+                mapping, is the key to understanding the proposition and knowing
                 which experiments should be prioritised.
               </p>
               <p className="cardText">
-                Our experienced, multi-disciplined teams allow us to ideate
-                effectively and choose the right experients, which is
+                Our experienced multi-disciplined teams allow us to ideate
+                effectively and choose the right experiments; which is
                 fundamental to the rest of the process.
               </p>
             </ContentCard>
@@ -111,7 +111,7 @@ const Phases = () => (
                 containing a narrow slice of the overall proposition.
               </p>
               <p className="cardText">
-                We replace lengthy, speculative research by instead giving users
+                We replace lengthy, speculative research; instead giving users
                 a realistic view of what the proposition actually means to them.
               </p>
             </ContentCard>
@@ -125,7 +125,7 @@ const Phases = () => (
         <div className="phase-heading">
           <div className="grav-o-full-bleed__content">
             <div className="row phase-heading-content phase-heading-content--sign">
-              <div className="col hide-sm"></div>
+              <div className="col hide-sm" />
               <div className="col">
                 <h3 className="phase-sub-heading">
                   <span className="grav-u-font-size-minus-1">Phase Three</span>
