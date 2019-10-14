@@ -48,7 +48,7 @@ module.exports = {
         background_color: `#FFFFFF`,
         theme_color: `#008d7c`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`,
+        icon: `src/images/cycle-7-icon.png`,
       },
     },
     {
