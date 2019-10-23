@@ -29,7 +29,9 @@ const Layout = ({ children }) => (
           bodyAttributes={{
             class: "grav-o-full-bleed"
           }}
-        />
+        >
+          <title>{data.site.siteMetadata.title}</title>
+          </Helmet>
         <Header siteTitle={data.site.siteMetadata.title} />
         <main>{children}</main>
         <Footer />
