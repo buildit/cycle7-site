@@ -40,8 +40,8 @@ const Layout = ({ children }) => (
           }}
         >
           <title>{data.site.siteMetadata.title}</title>
-          </Helmet>
-        <Header siteTitle={data.site.siteMetadata.title} handleNavClick={handleNavClick}/>
+        </Helmet>
+        <Header siteTitle={data.site.siteMetadata.title} handleNavClick={handleNavClick} />
         <main>{children}</main>
         <Footer />
       </>

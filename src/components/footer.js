@@ -2,7 +2,7 @@ import React from "react";
 import BuilditLogoSvg from "./builditLogoSvg";
 
 const Footer = () => (
-  <footer className="grav-c-page-footer">
+  <footer id="contact-us" className="grav-c-page-footer">
     <div>
       <p>
         Proudly produced by <br />
