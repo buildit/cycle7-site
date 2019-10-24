@@ -8,7 +8,7 @@ const Outcomes = () => (
     </p>
     <ul className="row outcome-list">
       <li className="col-md-4 outcome-list-item">
-        <div class="media">
+        <div className="media">
           <img src={Tick} alt="" className="outcome-tick-icon"/>
           <div>
             <p>Pinpoint and answer the unknown, important questions.</p>
@@ -16,7 +16,7 @@ const Outcomes = () => (
         </div>
       </li>
       <li className="col-md-4 outcome-list-item">
-        <div class="media">
+        <div className="media">
           <img src={Tick} alt="" className="outcome-tick-icon"/>
           <div>
             <p>Run lean impactful experiments tested directly with users.</p>
@@ -24,7 +24,7 @@ const Outcomes = () => (
         </div>
       </li>
       <li className="col-md-4 outcome-list-item">
-        <div class="media">
+        <div className="media">
           <img src={Tick} alt="" className="outcome-tick-icon"/>
           <div>
             <p>Build realistic propositions from data driven insights.</p>

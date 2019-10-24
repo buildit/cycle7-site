@@ -1,6 +1,6 @@
 import React from "react";
 
-const Contact = () => {
+const Contact = (props) => {
   const formRef = React.createRef();
   const fieldSetRef = React.createRef();
   const nameRef = React.createRef();
@@ -10,6 +10,7 @@ const Contact = () => {
   const loaderRef = React.createRef();
   const errorRef = React.createRef();
   const successRef = React.createRef();
+
 
   const onFormSubmit = event => {
     event.preventDefault();
@@ -59,7 +60,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="contact" data-gtm-track="contact-form" id="contact-us">
+    <div className="contact" data-gtm-track="contact-form" id="contact-us" ref={props.contactRef}>
       <section className="grav-o-full-bleed__content grav-u-pt-xxl grav-u-pb-xxl">
         <h2 className="grav-u-text-centered">Let's talk</h2>
         <div className="row">
@@ -73,7 +74,7 @@ const Contact = () => {
         <form ref={formRef} action="#" onSubmit={onFormSubmit}>
           <fieldset ref={fieldSetRef}>
             <div className="contact-row">
-              <label className="contact-label" for="name">
+              <label className="contact-label" htmlFor="name">
                 Your Name
               </label>
               <input
@@ -81,11 +82,11 @@ const Contact = () => {
                 ref={nameRef}
                 type="text"
                 id="name"
-                required="true"
+                required
               />
             </div>
             <div className="contact-row">
-              <label className="contact-label" for="email">
+              <label className="contact-label" htmlFor="email">
                 Your Email
               </label>
               <input
@@ -93,11 +94,11 @@ const Contact = () => {
                 ref={emailRef}
                 type="email"
                 id="email"
-                required="true"
+                required
               />
             </div>
             <div className="contact-row">
-              <label className="contact-label" for="comments">
+              <label className="contact-label" htmlFor="comments">
                 Additional Information
               </label>
               <textarea

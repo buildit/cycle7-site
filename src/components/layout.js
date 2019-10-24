@@ -12,6 +12,15 @@ import Header from "./header";
 import Footer from "./footer";
 import Helmet from "react-helmet";
 
+const handleNavClick = (e, ref) => {
+  e.preventDefault();
+
+  ref.current.scrollIntoView({
+    behavior: 'smooth',
+    block: 'start',
+  });
+}
+
 const Layout = ({ children }) => (
   <StaticQuery
     query={graphql`
@@ -32,7 +41,7 @@ const Layout = ({ children }) => (
         >
           <title>{data.site.siteMetadata.title}</title>
           </Helmet>
-        <Header siteTitle={data.site.siteMetadata.title} />
+        <Header siteTitle={data.site.siteMetadata.title} handleNavClick={handleNavClick}/>
         <main>{children}</main>
         <Footer />
       </>
