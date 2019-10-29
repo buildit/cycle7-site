@@ -1,7 +1,10 @@
 import React from "react";
 
 const Team = () => (
-  <section className="grav-o-full-bleed__content grav-u-pt-xxl" data-gtm-track="collaboration">
+  <section
+    className="grav-o-full-bleed__content grav-u-pt-xxl"
+    data-gtm-track="collaboration"
+  >
     <h3 className="grav-u-text-centered grav-u-font-size-plus-4">
       Better Together
     </h3>
@@ -13,40 +16,46 @@ const Team = () => (
         relationships.
       </p>
     </div>
-    <div className="row">
-      <div className="col team-text-right">
-        <h4 className="grav-u-font-size-minus-2 team-members">
-          Your commitment
-        </h4>
-        <ul className="team-no-bullets">
-          <li>Product Owner</li>
-          <li>Business Analyst</li>
-        </ul>
+    <div className="team-makeup">
+      <div className="row justify-content-center team-makeup-item grav-u-mb-xl">
+        <div className="col-sm-4 grav-u-text-centered">
+          <h4 className="grav-u-font-size-plus-1">Cross Functional</h4>
+          <p className="grav-u-mt-m">
+            Engineering, Product, Design, Business and other skill sets if needed.
+          </p>
+        </div>
       </div>
-      <div className="col team-border-left">
-        <h4 className="grav-u-font-size-minus-2 team-members">
-          Our commitment
-        </h4>
-        <ul className="team-no-bullets">
-          <li>Creative Technologist x2</li>
-          <li>UX Designer</li>
-          <li>Experience Designer</li>
-          <li>Delivery Lead</li>
-        </ul>
+      <div className="row justify-content-center team-makeup-item grav-u-mb-xl">
+        <div className="col-sm-4 grav-u-text-centered">
+          <h4 className="grav-u-font-size-plus-1">100% Dedicated</h4>
+          <p className="grav-u-mt-m">
+            Create space for the team to only focus on this initiative.
+          </p>
+        </div>
       </div>
-    </div>
-    <div className="row grav-u-pt-xl">
-      <div className="col-md-5 offset-md-1 team-left-col">
-        <p>
-          You commit people and resources in a shared location to eliminate
-          needless gaps and dependencies.
-        </p>
+      <div className="row justify-content-center team-makeup-item grav-u-mb-xl">
+        <div className="col-sm-4 grav-u-text-centered">
+          <h4 className="grav-u-font-size-plus-1">Data Influenced</h4>
+          <p className="grav-u-mt-m">
+            Measure outcomes and not just deliver features.
+          </p>
+        </div>
       </div>
-      <div className="col-md-5 team-right-col">
-        <p>
-          We help shape the proposal so you gain better results for steering
-          your business decision making.
-        </p>
+      <div className="row justify-content-center team-makeup-item grav-u-mb-xl">
+        <div className="col-sm-4 grav-u-text-centered">
+          <h4 className="grav-u-font-size-plus-1">Customer Centric</h4>
+          <p className="grav-u-mt-m">
+            Desire to create real customer empathy and solve problems.
+          </p>
+        </div>
+      </div>
+      <div className="row justify-content-center team-makeup-item grav-u-mb-xl">
+        <div className="col-sm-4 grav-u-text-centered">
+          <h4 className="grav-u-font-size-plus-1">Diverse</h4>
+          <p className="grav-u-mt-m">
+            Team members vary in race, ethnicity, gender, age and other dimensions.
+          </p>
+        </div>
       </div>
     </div>
   </section>
