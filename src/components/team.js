@@ -21,7 +21,7 @@ const Team = () => (
         <div className="col-sm-4 grav-u-text-centered">
           <h4 className="grav-u-font-size-plus-1">Cross Functional</h4>
           <p className="grav-u-mt-m">
-            Engineering, Product, Design, Business and other roles if needed.
+            Engineering, Product, Design, Business and other skill sets if needed.
           </p>
         </div>
       </div>
