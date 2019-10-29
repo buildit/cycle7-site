@@ -73,7 +73,7 @@ const Contact = () => {
         <form ref={formRef} action="#" onSubmit={onFormSubmit}>
           <fieldset ref={fieldSetRef}>
             <div className="contact-row">
-              <label className="contact-label" for="name">
+              <label className="contact-label" htmlFor="name">
                 Your Name
               </label>
               <input
@@ -81,11 +81,11 @@ const Contact = () => {
                 ref={nameRef}
                 type="text"
                 id="name"
-                required="true"
+                required={true}
               />
             </div>
             <div className="contact-row">
-              <label className="contact-label" for="email">
+              <label className="contact-label" htmlFor="email">
                 Your Email
               </label>
               <input
@@ -93,11 +93,11 @@ const Contact = () => {
                 ref={emailRef}
                 type="email"
                 id="email"
-                required="true"
+                required={true}
               />
             </div>
             <div className="contact-row">
-              <label className="contact-label" for="comments">
+              <label className="contact-label" htmlFor="comments">
                 Additional Information
               </label>
               <textarea
