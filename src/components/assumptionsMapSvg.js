@@ -25,11 +25,11 @@ const AssumptionsMapSvg = () => (
     <path
       fill="#3d3a3a"
       stroke="#000"
-      stroke-miterlimit="10"
-      stroke-width="2"
+      strokeMiterlimit="10"
+      strokeWidth="2"
       d="M32.9 89.92h176"
     />
-    <g class="c7-stickies c7-unknown-important">
+    <g className="c7-stickies c7-unknown-important">
       <path d="M186.9 18.92v22h14l8-8v-14" fill="#0089cf"></path>
       <path d="M147.9 17.92v22h14l8-8v-14" fill="#00b49d"></path>
       <path d="M164.9 45.92v22h14l8-8v-14" fill="#fdb913"></path>
@@ -73,8 +73,8 @@ const AssumptionsMapSvg = () => (
     <path
       fill="#3d3a3a"
       stroke="#000"
-      stroke-miterlimit="10"
-      stroke-width="2"
+      strokeMiterlimit="10"
+      strokeWidth="2"
       d="M120.9 12.92v176"
     />
   </svg>
