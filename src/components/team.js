@@ -16,49 +16,47 @@ const Team = () => (
         relationships.
       </p>
     </div>
-    <div className="team-makeup">
-      <div className="row justify-content-center team-makeup-item grav-u-mb-xl">
-        <div className="col-sm-4 grav-u-text-centered">
+      <ul className="row team-makeup">
+        <li className="col-sm-4 offset-sm-1 grav-u-mb-l">
           <h4 className="grav-u-font-size-plus-1">Cross Functional</h4>
           <p className="grav-u-mt-m">
-            Engineering, Product, Design, Business and other skill sets if needed.
+            Engineering, Design, Business and other skill sets if
+            needed.
           </p>
-        </div>
-      </div>
-      <div className="row justify-content-center team-makeup-item grav-u-mb-xl">
-        <div className="col-sm-4 grav-u-text-centered">
+        </li>
+        <li className="col-sm-4 offset-sm-2 grav-u-mb-l">
           <h4 className="grav-u-font-size-plus-1">100% Dedicated</h4>
           <p className="grav-u-mt-m">
             Create space for the team to only focus on this initiative.
           </p>
-        </div>
-      </div>
-      <div className="row justify-content-center team-makeup-item grav-u-mb-xl">
-        <div className="col-sm-4 grav-u-text-centered">
+        </li>
+        <li className="col-sm-4 offset-sm-1 grav-u-mb-l">
           <h4 className="grav-u-font-size-plus-1">Data Influenced</h4>
           <p className="grav-u-mt-m">
             Measure outcomes and not just deliver features.
           </p>
-        </div>
-      </div>
-      <div className="row justify-content-center team-makeup-item grav-u-mb-xl">
-        <div className="col-sm-4 grav-u-text-centered">
+        </li>
+        <li className="col-sm-4 offset-sm-2 grav-u-mb-l">
           <h4 className="grav-u-font-size-plus-1">Customer Centric</h4>
           <p className="grav-u-mt-m">
             Desire to create real customer empathy and solve problems.
           </p>
-        </div>
-      </div>
-      <div className="row justify-content-center team-makeup-item grav-u-mb-xl">
-        <div className="col-sm-4 grav-u-text-centered">
+        </li>
+        <li className="col-sm-4 offset-sm-1 grav-u-mb-l">
           <h4 className="grav-u-font-size-plus-1">Diverse</h4>
           <p className="grav-u-mt-m">
-            Team members vary in race, ethnicity, gender, age and other dimensions.
+            Team members vary in race, age, gender and other
+            dimensions.
           </p>
-        </div>
-      </div>
-    </div>
-  </section>
+        </li>
+        <li className="col-sm-4 offset-sm-2 grav-u-mb-l">
+          <h4 className="grav-u-font-size-plus-1">Rapid and Real</h4>
+          <p className="grav-u-mt-m">
+            Hands on skills to build and test prototypes.
+          </p>
+        </li>
+      </ul>
+    </section>
 );
 
 export default Team;
