@@ -5,7 +5,7 @@
   margin: 0;
 }
 
-@media (min-width: grav-breakpoint(medium)) {
+@media (min-width: grav-breakpoint(small)) {
   .team-makeup {
     &:before {
       content: "";
