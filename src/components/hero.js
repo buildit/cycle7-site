@@ -11,7 +11,7 @@ const Hero = () => (
     </svg>
       <h1 className="hero-heading">Cycle 7</h1>
       <p className="grav-u-font-size-plus-2">
-        A rapid innovation process guaranteed to deliver
+        A seven week lean understanding and rapid prototyping process
       </p>
     </div>
   </section>
