@@ -1,21 +1,31 @@
-.team {
-  &-makeup {
-    position: relative;
+.team-makeup {
+  position: relative;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
 
+@media (min-width: grav-breakpoint(small)) {
+  .team-makeup {
     &:before {
       content: "";
       position: absolute;
-      height: 100%;
+      height: 18em;
+      width: 18em;
       top: 0;
       left: 50%;
-      border-right: 4px dotted #008d7c;
-      z-index: -1;
+      margin-left: -9em;
+      border: 15px solid #008d7c;
+      border-radius: 50%;
+      opacity: 0.15;
     }
-  }
 
-  &-makeup-item {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    background: white;
+    li:nth-child(odd) {
+      text-align: right;
+    }
+
+    li {
+      background: white;
+    }
   }
 }
