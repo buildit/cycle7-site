@@ -2,7 +2,7 @@
    or raised as Github issues in Gravity */
 
 /* Proper fix not yet in Gravity Next */
-body > div:first-of-type,
+body>div:first-of-type,
 main {
   margin-top: 0;
 }
@@ -21,9 +21,25 @@ main {
   margin-top: 0;
 }
 
+
 // utils
 @media (max-width: grav-breakpoint(medium)) {
   .hide-sm {
     display: none;
   }
 }
+
+// To allow for hero nav item
+body>header .grav-c-toggle-menu[aria-pressed]~.grav-c-nav-menu,
+body>header .grav-c-toggle-menu[aria-pressed='false']~.grav-c-nav-menu,
+.grav-c-page-header .grav-c-toggle-menu[aria-pressed]~.grav-c-nav-menu,
+.grav-c-page-header .grav-c-toggle-menu[aria-pressed='false']~.grav-c-nav-menu,
+.grav-c-page-header__logo {
+  margin: 0;
+}
+
+.grav-c-page-header__logo,
+.grav-c-page-header > div {
+  padding-bottom: 0;
+}
+

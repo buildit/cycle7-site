@@ -1,0 +1,14 @@
+// Sticky header
+
+.grav-c-page-header--sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: --grav-co-grp-a-neutral;
+  z-index: 100;
+}
+
+.grav-c-nav-menu__hero {
+  background: var(--grav-co-grp-b-control-emphasis);
+  color: --grav-co-grp-a-neutral;
+}
