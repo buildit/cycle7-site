@@ -110,7 +110,7 @@ const Phases = () => (
                 <li>Data-lead experiments tested with real users</li>
                 <li>Conclusive insight into the validity of the hypotheses</li>
                 <li>Crucial insight into what's desirable, viable and feasible</li>
-                <li>Typically, a prototype containing the key features </li>
+                <li>Typically, a prototype containing the key features</li>
               </ul>
             </div>
           </div>
