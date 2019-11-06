@@ -49,30 +49,18 @@ const Phases = () => (
                 fundamental to the rest of the process.
               </p>
             </ContentCard>
+            <div>
             <div className="c7-phase1-graphic">
               <div className="c7-phase1-graphic__map">
                 <AssumptionsMapSvg />
               </div>
-              <span className="c7-phase1-graphic__arrow">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 73 73">
-                  <path d="M69.5 35.086l-19.137-.004L50.367 0H22.602v35.086L3.5 35.082 36.502 73z" />
-                </svg>
-              </span>
-              <div>
-                <span className="c7-phase1-graphic__outcome">Hypothosis 1</span>
-                <span className="c7-phase1-graphic__outcome">Hypothosis 2</span>
-                <span className="c7-phase1-graphic__outcome">Hypothosis 3</span>
-              </div>
-              <span className="c7-phase1-graphic__arrow">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 73 73">
-                  <path d="M69.5 35.086l-19.137-.004L50.367 0H22.602v35.086L3.5 35.082 36.502 73z" />
-                </svg>
-              </span>
-              <div>
-                <span className="c7-phase1-graphic__outcome">Experiment 1</span>
-                <span className="c7-phase1-graphic__outcome">Experiment 2</span>
-                <span className="c7-phase1-graphic__outcome">Experiment 3</span>
-              </div>
+            </div>
+            <h5>Outcomes</h5>
+                <ul>
+                  <li>Assumptions map; a living document for measuring what needs to be learnt</li>
+                  <li>Clearly defined and prioritised hypotheses</li>
+                  <li>Strategy for building the right experiments to test each hypothesis</li>
+                </ul>
             </div>
           </div>
         </div>
@@ -106,7 +94,7 @@ const Phases = () => (
                 Rapid prototyping
               </h4>
               <p className="cardText">
-                Each experiment is built for users to test; and designed
+                Experiments are built for users to test and designed
                 to determine the validity of the hypothesis. This is usually a prototype
                 containing a narrow slice of the overall proposition.
               </p>
@@ -117,6 +105,13 @@ const Phases = () => (
             </ContentCard>
             <div className="c7-graphic">
               <img src={TempBuildTestLearn} alt="" />
+              <h5>Outcomes</h5>
+              <ul>
+                <li>Data-lead experiments tested with real users</li>
+                <li>Conclusive insight into the validity of the hypotheses</li>
+                <li>Crucial insight into what's desirable, viable and feasible</li>
+                <li>Typically, a prototype containing the key features</li>
+              </ul>
             </div>
           </div>
         </div>
@@ -164,6 +159,12 @@ const Phases = () => (
             </ContentCard>
             <div>
               <CompileFindingsSvg />
+              <h5>Outcomes</h5>
+              <ul>
+                <li>A well defined backlog of activities that should happen next</li>
+                <li>Clear, insightful reports detailing how risk has been reduced</li>
+                <li>A strategy for moving forward or pivoting in a new direction</li>
+              </ul>
             </div>
           </div>
         </div>
