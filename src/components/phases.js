@@ -19,7 +19,7 @@ const Phases = () => (
                 <h3 className="phase-sub-heading">
                   <span className="grav-u-font-size-minus-1">Phase One</span>
                   <br />
-                  <span>Ideate</span>
+                  <span>Discover</span>
                 </h3>
               </div>
               <div className="col">
@@ -96,7 +96,7 @@ const Phases = () => (
               <p className="cardText">
                 Experiments are built for users to test and designed
                 to determine the validity of the hypothesis. This is usually a prototype
-                containing a narrow slice of the overall proposition.
+                containing prioritised features of the overall proposition.
               </p>
               <p className="cardText">
                 We replace lengthy, speculative research; instead giving users
