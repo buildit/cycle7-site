@@ -2,9 +2,9 @@ import React from "react";
 import Tick from "../images/tick.svg"
 
 const Outcomes = () => (
-   <section className="grav-o-full-bleed__content grav-u-pt-xxl grav-u-pb-xxl" data-gtm-track="outcomes">
-    <ul className="row outcome-list">
-      <li className="col-md-4 outcome-list-item">
+   <section className="grav-o-full-bleed__content grav-u-pb-xxl" data-gtm-track="outcomes">
+    <ul className="grav-o-three-column grav-u-list-unstyled">
+      <li>
         <div className="media">
           <img src={Tick} alt="" className="outcome-tick-icon"/>
           <div>
@@ -12,7 +12,7 @@ const Outcomes = () => (
           </div>
         </div>
       </li>
-      <li className="col-md-4 outcome-list-item">
+      <li>
         <div className="media">
           <img src={Tick} alt="" className="outcome-tick-icon"/>
           <div>
@@ -20,7 +20,7 @@ const Outcomes = () => (
           </div>
         </div>
       </li>
-      <li className="col-md-4 outcome-list-item">
+      <li>
         <div className="media">
           <img src={Tick} alt="" className="outcome-tick-icon"/>
           <div>

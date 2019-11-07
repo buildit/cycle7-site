@@ -7,6 +7,10 @@ main {
   margin-top: 0;
 }
 
+img {
+  width: 100%;
+}
+
 /* removes teal border */
 .grav-c-page-footer {
   border: none;
@@ -27,3 +31,30 @@ main {
     display: none;
   }
 }
+
+// So it works on mobile too
+.grav-o-two-column--small {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -1rem;
+  margin-left: -1rem;
+  padding-right: 0;
+  padding-left: 0;
+
+  > * {
+    width: calc((100% - 4rem) / 2);
+    margin-right: 1rem;
+    margin-left: 1rem;
+  }
+}
+
+.grav-u-pt-xxl {
+  padding-top: calc( 1rem + 0.5 * (100vw / 16 )) !important;
+}
+
+.grav-u-pb-xxl {
+  padding-bottom: calc( 1rem + 0.5 * (100vw / 16 )) !important;
+}
+
+
+//padding-bottom: calc( 1rem + 0.5 * ( ( 100vw - 32rem) ) / 10) !important;

@@ -1,31 +1,49 @@
+$team-circle-size: 18em;
+
 .team-makeup {
   position: relative;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
 
-@media (min-width: grav-breakpoint(small)) {
-  .team-makeup {
-    &:before {
-      content: "";
-      position: absolute;
-      height: 18em;
-      width: 18em;
-      top: 0;
+  &:before {
+    content: "";
+    position: absolute;
+    border: 15px solid #008d7c;
+    border-radius: 50%;
+    opacity: 0.15;
+    height: 100%;
+    width: $team-circle-size;
+    margin-left: calc(-#{$team-circle-size} / 2 - #{$grav-sp-m});
+    left: 0;
+    top: 0;
+    z-index: 0;
+
+    @media (min-width: grav-breakpoint(small)) {
+      top: 50%;
       left: 50%;
-      margin-left: -9em;
-      border: 15px solid #008d7c;
-      border-radius: 50%;
-      opacity: 0.15;
+      height: $team-circle-size;
+      width: $team-circle-size;
+      margin-top: -($team-circle-size / 2);
+      margin-left: -($team-circle-size / 2);
+    }
+  }
+
+  div {
+    position: relative;
+    background: white;
+    background-clip: content-box;
+    z-index: 10;
+
+    @media (min-width: grav-breakpoint(small)) {   
+      &:nth-child(odd) {
+        text-align: right;
+      }
     }
 
-    li:nth-child(odd) {
-      text-align: right;
+    @media (min-width: grav-breakpoint(extra-large)) {
+      padding: 0 $grav-sp-xl;
     }
 
-    li {
-      background: white;
+    > * {
+      padding: 0 1rem;
     }
   }
 }
