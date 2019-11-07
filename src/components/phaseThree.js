@@ -1,5 +1,6 @@
 import React from 'react'
 
+
 const PhaseThree = props => (
   <svg viewBox="0 0 766.01 766.01" {...props}>
     <defs>
