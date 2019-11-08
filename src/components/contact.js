@@ -60,84 +60,84 @@ const Contact = () => {
 
   return (
     <section>
-    <div className="contact" data-gtm-track="contact-form">
-      <section className="grav-o-full-bleed__content grav-u-pt-xxl grav-u-pb-xxl">
-        <h2 className="grav-u-text-centered">Let's talk</h2>
-        <div className="row">
-          <div className="col-md-10">
-            <p>
-              We can help with all aspects of sales and delivery; so message the
-              team and we aim get back you within 24 hours.
-            </p>
-          </div>
-        </div>
-        <form ref={formRef} action="#" onSubmit={onFormSubmit}>
-          <fieldset ref={fieldSetRef}>
-            <div className="contact-row">
-              <label className="contact-label" htmlFor="name">
-                Your Name
-              </label>
-              <input
-                className="contact-input"
-                ref={nameRef}
-                type="text"
-                id="name"
-                required={true}
-              />
-            </div>
-            <div className="contact-row">
-              <label className="contact-label" htmlFor="email">
-                Your Email
-              </label>
-              <input
-                className="contact-input"
-                ref={emailRef}
-                type="email"
-                id="email"
-                required={true}
-              />
-            </div>
-            <div className="contact-row">
-              <label className="contact-label" htmlFor="comments">
-                Additional Information
-              </label>
-              <textarea
-                className="contact-input contact-textarea"
-                ref={commentsRef}
-                id="comments"
-                type="text"
-                rows="3"
-              />
-            </div>
-            <button
-              ref={submitRef}
-              type="submit"
-              className="grav-u-font-size-plus-3"
-            >
-              Contact us
-            </button>
-            <div
-              hidden="hidden"
-              ref={loaderRef}
-              className="sk-three-bounce grav-u-font-size-plus-3"
-            >
-              <div className="sk-child sk-bounce1" />
-              <div className="sk-child sk-bounce2" />
-              <div className="sk-child sk-bounce3" />
-            </div>
-            <div hidden="hidden" ref={errorRef} className="contact-error">
+      <div className="contact" data-gtm-track="contact-form">
+        <section className="grav-o-full-bleed__content grav-u-pt-xxl grav-u-pb-xxl">
+          <h2 className="grav-u-text-centered">Let's talk</h2>
+          <div>
+            <div>
               <p>
-                There was a problem sending your contact details. Try again
-                later?
+                We can help with all aspects of sales and delivery; so message the
+                team and we aim get back you within 24 hours.
               </p>
             </div>
-          </fieldset>
-        </form>
-        <div hidden="hidden" ref={successRef} className="contact-success">
-          <p>Thanks for getting in contact. We'll get back to you soon.</p>
-        </div>
-      </section>
-    </div>
+          </div>
+          <form ref={formRef} action="#" onSubmit={onFormSubmit}>
+            <fieldset ref={fieldSetRef}>
+              <div>
+                <label className="contact-label" htmlFor="name">
+                  Your Name
+                </label>
+                <input
+                  className="contact-input"
+                  ref={nameRef}
+                  type="text"
+                  id="name"
+                  required={true}
+                />
+              </div>
+              <div>
+                <label className="contact-label" htmlFor="email">
+                  Your Email
+                </label>
+                <input
+                  className="contact-input"
+                  ref={emailRef}
+                  type="email"
+                  id="email"
+                  required={true}
+                />
+              </div>
+              <div>
+                <label className="contact-label" htmlFor="comments">
+                  Additional Information
+                </label>
+                <textarea
+                  className="contact-input contact-textarea"
+                  ref={commentsRef}
+                  id="comments"
+                  type="text"
+                  rows="3"
+                />
+              </div>
+              <button
+                ref={submitRef}
+                type="submit"
+                className="grav-u-font-size-plus-3"
+              >
+                Contact us
+              </button>
+              <div
+                hidden="hidden"
+                ref={loaderRef}
+                className="sk-three-bounce grav-u-font-size-plus-3"
+              >
+                <div className="sk-child sk-bounce1" />
+                <div className="sk-child sk-bounce2" />
+                <div className="sk-child sk-bounce3" />
+              </div>
+              <div hidden="hidden" ref={errorRef} className="contact-error">
+                <p>
+                  There was a problem sending your contact details. Try again
+                  later?
+                </p>
+              </div>
+            </fieldset>
+          </form>
+          <div hidden="hidden" ref={successRef} className="contact-success">
+            <p>Thanks for getting in contact. We'll get back to you soon.</p>
+          </div>
+        </section>
+      </div>
     </section>
   );
 };

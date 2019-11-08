@@ -8,6 +8,12 @@
     padding: 5px 10px;
   }
 
+  @media (min-width: grav-breakpoint(small)) {
+    h2 + div {
+      max-width: 83.33333%;
+    }
+  }
+
   fieldset {
     border: none;
     padding: 0;
