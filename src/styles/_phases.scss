@@ -2,27 +2,22 @@
   &-heading {
     background: url(../images/dots.svg) fixed;
     padding: 20px 0;
+  }
 
-    @media (min-width: grav-breakpoint(medium)) {
-      padding: 0;
-      border-top: 40px solid white;
-      box-shadow: 0px -40px 0px white inset;
+  &-heading-number {
+    font-weight: 700;
+    font-size: 12em;
+    color: var(--grav-co-grp-b-control-emphasis);
+    line-height: 0;
+    margin-top: 50px;
+    display: block;
+    text-align: center;
 
-      &-content {
-        background: url(../images/bulb.svg) no-repeat 100px 0;
-        background-size: contain;
-        padding: 40px 0;
-        position: relative;
-        top: -40px;
-
-        &--test {
-          background-image: url(../images/test.svg);
-        }
-
-        &--sign {
-          background-image: url(../images/sign.svg);
-        }
-      }
+    @media (max-width: grav-breakpoint(medium)) {
+      margin-top: 0;
+      font-size: 6em;
+      line-height: 1;
+      text-align: left;
     }
   }
 
