@@ -1,4 +1,36 @@
+//Remove list bullet points/padding
 .grav-u-list-unstyled {
   list-style-type: none;
   padding-left: 0;
 }
+
+
+// Temporary overrides, add functions to utilities to handle breakpoints
+.grav-u-pb-xxl {
+  padding-bottom: 1rem !important;
+
+  @media (min-width: grav-breakpoint(small)) {
+    padding-bottom: 2rem !important;
+  }
+  @media (min-width: grav-breakpoint(medium)) {
+    padding-bottom: 3rem !important;
+  }
+  @media (min-width: grav-breakpoint(large)) {
+    padding-bottom: 4rem !important;
+  }
+}
+
+.grav-u-pt-xxl {
+  padding-bottom: 1rem !important;
+
+  @media (min-width: grav-breakpoint(small)) {
+    padding-bottom: 2rem !important;
+  }
+  @media (min-width: grav-breakpoint(medium)) {
+    padding-bottom: 3rem !important;
+  }
+  @media (min-width: grav-breakpoint(large)) {
+    padding-bottom: 4rem !important;
+  }
+}
+
