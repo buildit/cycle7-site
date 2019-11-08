@@ -9,11 +9,11 @@ $team-circle-size: 18em;
     border: 15px solid #008d7c;
     border-radius: 50%;
     opacity: 0.15;
-    height: 100%;
+    height: calc(100% + #{$grav-sp-m});
     width: $team-circle-size;
     margin-left: calc(-#{$team-circle-size} / 2 - #{$grav-sp-m});
     left: 0;
-    top: 0;
+    top: -1.5rem;
     z-index: 0;
 
     @media (min-width: grav-breakpoint(small)) {
@@ -21,8 +21,7 @@ $team-circle-size: 18em;
       left: 50%;
       height: $team-circle-size;
       width: $team-circle-size;
-      margin-top: -($team-circle-size / 2);
-      margin-left: -($team-circle-size / 2);
+      margin-top: calc(-#{$team-circle-size} / 2 - #{$grav-sp-m});
     }
   }
 
