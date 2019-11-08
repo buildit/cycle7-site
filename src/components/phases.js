@@ -1,31 +1,30 @@
 import React from "react";
 import ContentCard from "./contentCard";
-// import TempBuildTestLearn from "../images/temp-build-test-learn.png";
-// import AssumptionsMapSvg from "./assumptionsMapSvg";
 import PhaseOne from "./phaseOne";
 import PhaseTwo from "./phaseTwo";
 import PhaseThree from "./phaseThree";
-// import CompileFindingsSvg from "./CompileFindingsSvg";
 
 const Phases = () => (
   <section className="grav-u-pt-xxl grav-u-pb-xxl">
-    <h2 className="grav-u-text-centered grav-u-font-size-plus-6">
+    <h2 className="grav-u-text-centered grav-u-font-size-plus-6 grav-u-pb-xxl">
       How our process works
     </h2>
     <div>
       <div className="c7-phase grav-u-pb-xl" data-gtm-track="phase-1">
         <div className="phase-heading">
           <div className="grav-o-full-bleed__content">
-            <div className="row phase-heading-content phase-heading-content--bulb">
-              <div className="col hide-sm"></div>
-              <div className="col">
+            <div className="row">
+              <div className="col grav-u-text-centered">
+                <span className="phase-heading-number">1</span>
+              </div>
+              <div className="col-sm-4">
                 <h3 className="phase-sub-heading">
                   <span className="grav-u-font-size-minus-1">Phase One</span>
                   <br />
                   <span>Discover</span>
                 </h3>
               </div>
-              <div className="col">
+              <div className="col-sm-4">
                 <h3 className="phase-sub-heading mt0">
                   <br />
                   <span className="block">2 weeks</span>
@@ -54,39 +53,41 @@ const Phases = () => (
             </ContentCard>
             <div>
               <div className="c7-phase1-graphic">
-              <PhaseOne />
+                <PhaseOne />
               </div>
             </div>
           </div>
           <ContentCard>
-          <h5>Outcomes</h5>
-          <ul className="grav-o-two-column">
-            <li>
-              Assumptions map; a living document for measuring what needs to
-              be learnt
-            </li>
-            <li>Clearly defined and prioritised hypotheses</li>
-            <li>
-              Strategy for building the right experiments to test each
-              hypothesis
-            </li>
-          </ul>
-        </ContentCard>
+            <h5>Outcomes</h5>
+            <ul className="grav-o-two-column">
+              <li>
+                Assumptions map; a living document for measuring what needs to
+                be learnt
+              </li>
+              <li>Clearly defined and prioritised hypotheses</li>
+              <li>
+                Strategy for building the right experiments to test each
+                hypothesis
+              </li>
+            </ul>
+          </ContentCard>
         </div>
       </div>
       <div className="c7-phase grav-u-pb-xl" data-gtm-track="phase-2">
         <div className="phase-heading">
           <div className="grav-o-full-bleed__content">
-            <div className="row phase-heading-content phase-heading-content--test">
-              <div className="col hide-sm"></div>
-              <div className="col">
+            <div className="row">
+              <div className="col grav-u-text-centered">
+                <span className="phase-heading-number">2</span>
+              </div>
+              <div className="col-sm-4">
                 <h3 className="phase-sub-heading">
                   <span className="grav-u-font-size-minus-1">Phase Two</span>
                   <br />
                   <span>Experiment</span>
                 </h3>
               </div>
-              <div className="col">
+              <div className="col-sm-4">
                 <h3 className="phase-sub-heading mt0">
                   <span className="grav-u-font-size-minus-1">2 sprints</span>
                   <br />
@@ -133,16 +134,18 @@ const Phases = () => (
       <div className="c7-phase grav-u-pb-xl" data-gtm-track="phase-3">
         <div className="phase-heading">
           <div className="grav-o-full-bleed__content">
-            <div className="row phase-heading-content phase-heading-content--sign">
-              <div className="col hide-sm" />
-              <div className="col">
+            <div className="row">
+              <div className="col grav-u-text-centered">
+                <span className="phase-heading-number">3</span>
+              </div>
+              <div className="col-sm-4">
                 <h3 className="phase-sub-heading">
                   <span className="grav-u-font-size-minus-1">Phase Three</span>
                   <br />
                   <span>Analyse</span>
                 </h3>
               </div>
-              <div className="col">
+              <div className="col-sm-4">
                 <h3 className="phase-sub-heading mt0">
                   <br />
                   <span className="block">1 week</span>
@@ -172,7 +175,7 @@ const Phases = () => (
               </p>
             </ContentCard>
             <div>
-            <PhaseThree />
+              <PhaseThree />
             </div>
           </div>
         </div>
