@@ -3,34 +3,38 @@
     background: url(../images/dots.svg) fixed;
     padding: 20px 0;
 
+    .grav-o-full-bleed__content > div {
+      display: flex;
+    }
+
     .grav-o-two-column {
+      margin-top: 0;
+      width: 100%;
+
       > div {
         display: flex;
         align-items: flex-end;
         margin-top: 0;
       }
     } 
+  }
+
+  &-heading-number {
+    display: flex;
+    align-items: flex-end;
+    padding-right: 5%;
+    line-height: 0.71;
+    font-weight: 700;
+    text-align: left;
+    font-size: 5em;
+    color: var(--grav-co-grp-b-control-emphasis);
 
     @media (min-width: grav-breakpoint(medium)) {
-      padding: 0;
-      border-top: 40px solid white;
-      box-shadow: 0px -40px 0px white inset;
-
-      &-content {
-        background: url(../images/bulb.svg) no-repeat 0 0;
-        padding: 40px $grav-sp-s;
-        position: relative;
-        top: -40px;
-        padding-left: 25%;
-
-        &--test {
-          background-image: url(../images/test.svg);
-        }
-
-        &--sign {
-          background-image: url(../images/sign.svg);
-        }
-      }
+      display: block; 
+      padding: 50px 10% 0 10%;
+      font-size: 12em;
+      text-align: center;
+      line-height: 0;
     }
   }
 
@@ -39,6 +43,10 @@
     
     > div {
       margin: 0;
+
+      &:first-child > *:first-of-type {
+        font-weight: 300;
+      }
     }
 
     span {

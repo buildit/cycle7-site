@@ -11,27 +11,32 @@ $team-circle-size: 18em;
     opacity: 0.15;
     height: calc(100% + #{$grav-sp-m});
     width: $team-circle-size;
-    margin-left: calc(-#{$team-circle-size} / 2 - #{$grav-sp-m});
+    margin-left: calc(-#{$team-circle-size} / 2 - #{$grav-sp-xl});
     left: 0;
     top: -1.5rem;
     z-index: 0;
 
     @media (min-width: grav-breakpoint(small)) {
       top: 50%;
-      left: 50%;
+      left: calc(50% - #{$grav-sp-m});
       height: $team-circle-size;
       width: $team-circle-size;
-      margin-top: calc(-#{$team-circle-size} / 2 - #{$grav-sp-m});
+      margin-left: -($team-circle-size / 2);
+      margin-top: calc(-#{$team-circle-size} / 2 - #{$grav-sp-l});
     }
   }
 
   div {
+    padding: $grav-sp-s 0;
+    margin-bottom: $grav-sp-l;
     position: relative;
     background: white;
-    background-clip: content-box;
     z-index: 10;
 
     @media (min-width: grav-breakpoint(small)) {   
+      background-clip: content-box;
+      padding: 0;
+
       &:nth-child(odd) {
         text-align: right;
       }
