@@ -8,6 +8,12 @@
     padding: 5px 10px;
   }
 
+  &__intro {
+    @media (min-width: grav-breakpoint(medium)) {
+      padding-right: $grav-sp-xxl;
+    }
+  }
+
   fieldset {
     border: none;
     padding: 0;

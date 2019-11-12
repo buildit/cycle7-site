@@ -13,39 +13,43 @@ const Phases = () => (
       <div className="c7-phase grav-u-pb-xl" data-gtm-track="phase-1">
         <div className="phase-heading">
           <div className="grav-o-full-bleed__content">
-            <div className="row">
-              <div className="col grav-u-text-centered">
-                <span className="phase-heading-number">1</span>
+            <div>
+              <div className="phase-heading-number">1</div>
+              <div className="grav-o-two-column grav-o-two-column--small">
+                  <div>
+                  <h3 className="phase-sub-heading">
+                    <div>
+                      <span className="grav-u-font-size-minus-1">
+                        Phase One
+                      </span>
+                    </div>
+                    <div>
+                      <span>Discover</span>
+                    </div>
+                  </h3>
+                </div>
+                <div>
+                  <h3 className="phase-sub-heading mt0">
+                    <span>2 weeks</span>
+                  </h3>
+                </div>
               </div>
-              <div className="col-sm-4">
-                <h3 className="phase-sub-heading">
-                  <span className="grav-u-font-size-minus-1">Phase One</span>
-                  <br />
-                  <span>Discover</span>
-                </h3>
               </div>
-              <div className="col-sm-4">
-                <h3 className="phase-sub-heading mt0">
-                  <br />
-                  <span className="block">2 weeks</span>
-                </h3>
-              </div>
-            </div>
           </div>
         </div>
         <div className="grav-o-full-bleed__content">
-          <div className="grav-o-two-column-alt">
+          <div className="grav-o-two-column">
             <ContentCard>
               <h4 className="cardTitle grav-u-font-size-plus-6">
                 Learn, understand <br />
                 and define
               </h4>
-              <p className="cardText">
+              <p>
                 Discovering what is unknown and important, through assumptions
                 mapping, is the key to understanding the proposition and knowing
                 which experiments should be prioritised.
               </p>
-              <p className="cardText">
+              <p>
                 Our experienced multi-disciplined teams allow us to ideate
                 effectively and choose the right experiments; which is
                 fundamental to the rest of the process.
@@ -74,27 +78,37 @@ const Phases = () => (
         </div>
       </div>
       <div className="c7-phase grav-u-pb-xl" data-gtm-track="phase-2">
-        <div className="phase-heading">
+      <div className="phase-heading">
           <div className="grav-o-full-bleed__content">
-            <div className="row">
-              <div className="col grav-u-text-centered">
-                <span className="phase-heading-number">2</span>
+            <div>
+              <div className="phase-heading-number">2</div>
+              <div className="grav-o-two-column grav-o-two-column--small">
+                  <div>
+                  <h3 className="phase-sub-heading">
+                    <div>
+                      <span className="grav-u-font-size-minus-1">
+                        Phase Two
+                      </span>
+                    </div>
+                    <div>
+                      <span>Experiment</span>
+                    </div>
+                  </h3>
+                </div>
+                <div>
+                  <h3 className="phase-sub-heading">
+                  <div>
+                      <span className="grav-u-font-size-minus-1">
+                        2 sprints
+                      </span>
+                    </div>
+                    <div>
+                      <span>4 weeks</span>
+                    </div>
+                  </h3>
+                </div>
               </div>
-              <div className="col-sm-4">
-                <h3 className="phase-sub-heading">
-                  <span className="grav-u-font-size-minus-1">Phase Two</span>
-                  <br />
-                  <span>Experiment</span>
-                </h3>
               </div>
-              <div className="col-sm-4">
-                <h3 className="phase-sub-heading mt0">
-                  <span className="grav-u-font-size-minus-1">2 sprints</span>
-                  <br />
-                  <span className="block">4 weeks</span>
-                </h3>
-              </div>
-            </div>
           </div>
         </div>
         <div className="grav-o-full-bleed__content c7-phase-2">
@@ -103,13 +117,13 @@ const Phases = () => (
               <h4 className="cardTitle grav-u-font-size-plus-6">
                 Rapid prototyping
               </h4>
-              <p className="cardText">
+              <p>
                 Experiments are built for users to test and designed to
                 determine the validity of the hypothesis. This is usually a
                 prototype containing prioritised features of the overall
                 proposition.
               </p>
-              <p className="cardText">
+              <p>
                 We replace lengthy, speculative research; instead giving users a
                 realistic view of what the proposition actually means to them.
               </p>
@@ -133,26 +147,54 @@ const Phases = () => (
       </div>
       <div className="c7-phase grav-u-pb-xl" data-gtm-track="phase-3">
         <div className="phase-heading">
-          <div className="grav-o-full-bleed__content">
-            <div className="row">
-              <div className="col grav-u-text-centered">
-                <span className="phase-heading-number">3</span>
+        <div className="grav-o-full-bleed__content">
+            <div>
+              <div className="phase-heading-number">3</div>
+              <div className="grav-o-two-column grav-o-two-column--small">
+                  <div>
+                  <h3 className="phase-sub-heading">
+                    <div>
+                      <span className="grav-u-font-size-minus-1">
+                        Phase Three
+                      </span>
+                    </div>
+                    <div>
+                      <span>Analyse</span>
+                    </div>
+                  </h3>
+                </div>
+                <div>
+                  <h3 className="phase-sub-heading mt0">
+                    <span>1 week</span>
+                  </h3>
+                </div>
               </div>
-              <div className="col-sm-4">
-                <h3 className="phase-sub-heading">
-                  <span className="grav-u-font-size-minus-1">Phase Three</span>
-                  <br />
-                  <span>Analyse</span>
-                </h3>
               </div>
-              <div className="col-sm-4">
-                <h3 className="phase-sub-heading mt0">
-                  <br />
-                  <span className="block">1 week</span>
-                </h3>
+          </div>
+          {/* <div className="grav-o-full-bleed__content">
+            <div>
+              <div className="grav-o-two-column grav-o-two-column--small">
+                <div>
+                  <span className="phase-heading-number">3</span>
+                  <h3 className="phase-sub-heading">
+                    <div>
+                      <span className="grav-u-font-size-minus-1">
+                        Phase Three
+                      </span>
+                    </div>
+                    <div>
+                      <span>Analyse</span>
+                    </div>
+                  </h3>
+                </div>
+                <div>
+                  <h3 className="phase-sub-heading mt0">
+                    <span>1 weeks</span>
+                  </h3>
+                </div>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
         <div className="grav-o-full-bleed__content">
           <div className="grav-o-two-column">
@@ -160,7 +202,7 @@ const Phases = () => (
               <h4 className="cardTitle grav-u-font-size-plus-6">
                 Compile the findings
               </h4>
-              <p className="cardText">
+              <p>
                 Findings are formatted to make it easy to communicate them to
                 all stakeholders. This includes presenting the data gathered
                 during user testing; demonstrating the validated hypotheses.

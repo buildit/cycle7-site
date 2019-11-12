@@ -12,18 +12,26 @@ main {
   border: none;
 }
 
-// bootstrap overrides
-.mt0 {
-  margin-top: 0;
-}
-
-[class^="col"] {
-  margin-top: 0;
-}
 
 // utils
 @media (max-width: grav-breakpoint(medium)) {
   .hide-sm {
     display: none;
+  }
+}
+
+// So it works on mobile too
+.grav-o-two-column--small {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -1rem;
+  margin-left: -1rem;
+  padding-right: 0;
+  padding-left: 0;
+
+  > * {
+    width: calc((100% - 4rem) / 2);
+    margin-right: 1rem;
+    margin-left: 1rem;
   }
 }

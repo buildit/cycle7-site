@@ -1,25 +1,5 @@
 /* Paterns or overrides that are very specific to Cycle7 site MVP */
 
-.contentCard {
-  box-sizing: border-box;
-  border-radius: 15px;
-  padding: 1rem;
-}
-
-// .section-heading {
-//   @include grav-color-apply('background-color', 'b', 'accent', true);
-//   background-image: url(../images/dots-alt.svg);
-//   // clip-path: polygon(0 0,0 calc(100% - var(--grav-fs-plus-4)),.5rem calc(100% - var(--grav-fs-plus-4)),calc(.5rem + var(--grav-fs-plus-4)) 100%,calc(.5rem + var(--grav-fs-plus-4)*2) calc(100% - var(--grav-fs-plus-4)),100% calc(100% - var(--grav-fs-plus-4)),100% 0);
-
-//   @media (min-width: 44rem) {
-//     clip-path: polygon(0 0,0 calc(100% - var(--grav-fs-plus-4)),2rem calc(100% - var(--grav-fs-plus-4)),calc(2rem + var(--grav-fs-plus-4)) 100%,calc(2rem + var(--grav-fs-plus-4)*2) calc(100% - var(--grav-fs-plus-4)),100% calc(100% - var(--grav-fs-plus-4)),100% 0);
-//   }
-
-//   @media (min-width: 56rem) {
-//     clip-path: polygon(0 0, 0 calc(100% - var(--grav-fs-plus-4)), 16rem calc(100% - var(--grav-fs-plus-4)), calc(16rem + var(--grav-fs-plus-4)) 100%, calc(16rem + var(--grav-fs-plus-4)*2) calc(100% - var(--grav-fs-plus-4)), 100% calc(100% - var(--grav-fs-plus-4)), 100% 0);
-//   }
-// }
-
 .categoryText {
   padding: 0.5em 0 1.75em;
   @include grav-color-apply("color", "b", "control-active", true);

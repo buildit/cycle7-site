@@ -16,47 +16,45 @@ const Team = () => (
         relationships.
       </p>
     </div>
-      <ul className="row team-makeup">
-        <li className="col-sm-4 offset-sm-1 grav-u-mb-l">
-          <h4 className="grav-u-font-size-plus-1">Cross Functional</h4>
-          <p className="grav-u-mt-m">
-            Engineering, Design, Business and other skill sets if
-            needed.
-          </p>
-        </li>
-        <li className="col-sm-4 offset-sm-2 grav-u-mb-l">
-          <h4 className="grav-u-font-size-plus-1">100% Dedicated</h4>
-          <p className="grav-u-mt-m">
-            Create space for the team to only focus on this initiative.
-          </p>
-        </li>
-        <li className="col-sm-4 offset-sm-1 grav-u-mb-l">
-          <h4 className="grav-u-font-size-plus-1">Data Influenced</h4>
-          <p className="grav-u-mt-m">
-            Measure outcomes and not just deliver features.
-          </p>
-        </li>
-        <li className="col-sm-4 offset-sm-2 grav-u-mb-l">
-          <h4 className="grav-u-font-size-plus-1">Customer Centric</h4>
-          <p className="grav-u-mt-m">
-            Desire to create real customer empathy and solve problems.
-          </p>
-        </li>
-        <li className="col-sm-4 offset-sm-1 grav-u-mb-l">
-          <h4 className="grav-u-font-size-plus-1">Diverse</h4>
-          <p className="grav-u-mt-m">
-            Team members vary in race, age, gender and other
-            dimensions.
-          </p>
-        </li>
-        <li className="col-sm-4 offset-sm-2 grav-u-mb-l">
-          <h4 className="grav-u-font-size-plus-1">Rapid and Real</h4>
-          <p className="grav-u-mt-m">
-            Hands on skills to build and test prototypes.
-          </p>
-        </li>
-      </ul>
-    </section>
+    <div className="grav-o-two-column team-makeup">
+      <div>
+        <h4 className="grav-u-font-size-plus-1">Cross Functional</h4>
+        <p className="grav-u-mt-m">
+          Engineering, Design, Business and other skill sets if needed.
+        </p>
+      </div>
+      <div>
+        <h4 className="grav-u-font-size-plus-1">100% Dedicated</h4>
+        <p className="grav-u-mt-m">
+          Create space for the team to only focus on this initiative.
+        </p>
+      </div>
+      <div>
+        <h4 className="grav-u-font-size-plus-1">Data Influenced</h4>
+        <p className="grav-u-mt-m">
+          Measure outcomes and not just deliver features.
+        </p>
+      </div>
+      <div>
+        <h4 className="grav-u-font-size-plus-1">Customer Centric</h4>
+        <p className="grav-u-mt-m">
+          Desire to create real customer empathy and solve problems.
+        </p>
+      </div>
+      <div>
+        <h4 className="grav-u-font-size-plus-1">Diverse</h4>
+        <p className="grav-u-mt-m">
+          Team members vary in race, age, gender and other dimensions.
+        </p>
+      </div>
+      <div>
+        <h4 className="grav-u-font-size-plus-1">Rapid and Real</h4>
+        <p className="grav-u-mt-m">
+          Hands on skills to build and test prototypes.
+        </p>
+      </div>
+    </div>
+  </section>
 );
 
 export default Team;
