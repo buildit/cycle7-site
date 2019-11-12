@@ -30,8 +30,9 @@ const Layout = ({ children }) => (
             class: "grav-u-color-scheme-teal-white grav-o-full-bleed"
           }}
         >
-        <title>{data.site.siteMetadata.title}</title>
+          <title>{data.site.siteMetadata.title}</title>
         </Helmet>
+
         <Header siteTitle={data.site.siteMetadata.title} />
         <main>{children}</main>
         <Footer />
