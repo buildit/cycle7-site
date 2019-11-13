@@ -1,9 +1,11 @@
 .contact {
-  background: url(../images/dots.svg) fixed;
+  margin-top: 0;
+  @include grav-color-apply('background-color', 'b', 'control-emphasis', true);
 
   h2,
-  p {
-    background: white;
+  p,
+  label {
+    color: white;
     display: inline-block;
     padding: 5px 10px;
   }

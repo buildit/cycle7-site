@@ -5,6 +5,7 @@ import Hero from "../components/hero";
 import Phases from "../components/phases";
 import Outcomes from "../components/outcomes";
 import Strategy from "../components/strategy";
+import WhatsNext from "../components/whatsNext";
 import Contact from "../components/contact";
 
 const IndexPage = () => (
@@ -14,6 +15,7 @@ const IndexPage = () => (
     <Strategy />
     <Team />
     <Phases />
+    <WhatsNext />
     <Contact />
   </Layout>
 );

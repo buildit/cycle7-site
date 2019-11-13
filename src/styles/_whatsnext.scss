@@ -1,0 +1,20 @@
+.whatsnext {
+  background: url(../images/dots.svg) fixed;
+
+  h3,
+  h4,
+  p {
+    background: white;
+    display: inline-block;
+    padding: 5px 10px;
+  }
+
+  ul {
+    background: white;
+    display: inline-block;
+    padding: $grav-sp-m $grav-sp-l $grav-sp-m $grav-sp-xl;
+    margin-left: 0;
+  }
+}
+
+
