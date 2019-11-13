@@ -6,6 +6,7 @@ import Phases from "../components/phases";
 import Outcomes from "../components/outcomes";
 import Strategy from "../components/strategy";
 import Contact from "../components/contact";
+import Quote from "../components/quote";
 
 const IndexPage = () => (
   <Layout>
@@ -13,6 +14,7 @@ const IndexPage = () => (
     <Outcomes />
     <Strategy />
     <Team />
+    <Quote />
     <Phases />
     <Contact />
   </Layout>
