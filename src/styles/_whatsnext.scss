@@ -1,20 +1,68 @@
 .whatsnext {
-  background: url(../images/dots.svg) fixed;
+  &__inner {
+    background: url(../images/dots.svg) fixed;
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 95% 85%, 50% 100%, 10% 85%, 0 85%);
 
-  h3,
-  h4,
-  p {
-    background: white;
-    display: inline-block;
-    padding: 5px 10px;
+    .grav-o-full-bleed__content {
+      > *:last-of-child {
+        margin-bottom: $grav-sp-xxl;
+      }
+    }
+
+    h3,
+    h4,
+    p {
+      background: white;
+      display: inline-block;
+      padding: 5px 10px;
+    }
+
+    p {
+      padding: $grav-sp-l $grav-sp-xl ($grav-sp-xl * 1.75);
+      clip-path: polygon(100% 0, 100% 64%, 50% 100%, 0 64%, 0 0);
+    }
   }
 
-  ul {
-    background: white;
-    display: inline-block;
-    padding: $grav-sp-m $grav-sp-l $grav-sp-m $grav-sp-xl;
-    margin-left: 0;
+  &__steps {
+    > * {
+      display: block;
+      text-align: center;
+    }
+
+    ul > {
+      li {
+        &:after {
+          content: "";
+          display: block;
+          border-bottom: 10px solid #008d7c;
+          margin: $grav-sp-m auto 0 auto;
+          opacity: 0.15;
+        }
+      }
+    }
+
+    li:nth-child(1) {
+      &:after {
+        width: 35%;
+      }
+    }
+
+    li:nth-child(2) {
+      &:after {
+        width: 50%;
+      }
+    }
+
+    li:nth-child(3) {
+      &:after {
+        width: 65%;
+      }
+    }
+
+    li:nth-child(4) {
+      &:after {
+        width: 80%;
+      }
+    }
   }
 }
-
-
