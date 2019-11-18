@@ -68,7 +68,7 @@ main {
       width: 100%;
 
       @media(min-width: grav-breakpoint(medium)) {
-        max-width: 250px;
+        max-width: $wipdig-logo-width + px;
       }
 
       &:first-of-type {
