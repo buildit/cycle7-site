@@ -1,5 +1,10 @@
 /* Paterns or overrides that are very specific to Cycle7 site MVP */
 
+main {
+  border-bottom: 5px solid;
+  @include grav-color-apply("border-color", "b", "control-active", true);
+}
+
 .categoryText {
   padding: 0.5em 0 1.75em;
   @include grav-color-apply("color", "b", "control-active", true);

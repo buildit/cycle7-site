@@ -1,3 +1,6 @@
+$wipdig-logo-width: 240;
+$designit-logo-width: 170;
+
 /* These are overrides for gravity that either need to be resolved properly in this project
    or raised as Github issues in Gravity */
 
@@ -10,6 +13,74 @@ main {
 /* removes teal border */
 .grav-c-page-footer {
   border: none;
+
+  > div > p:first-of-type {
+    > span:first-of-type {
+      display: inline-block;
+      margin-bottom: $grav-sp-m;
+    }
+
+    @media(min-width: grav-breakpoint(large)) {
+      width: 48%;
+    }
+  }
+
+  &__plus {
+    display: inline-block;
+    margin: 0 0.5em;
+    line-height: 0.65;
+    color: black;
+    font-size: 2rem;
+    
+    @media(min-width: grav-breakpoint(small)) {
+      @include grav-font-size(6);
+    }
+
+    @media(min-width: grav-breakpoint(large)) {
+      font-size: 3rem;
+    }
+  }
+
+  &__logos {
+    display: flex;
+    padding: 0 5%;
+    text-align: center;
+    margin: 0 auto;
+    align-items: flex-start;
+
+    @media(min-width: grav-breakpoint(small)) {
+      padding: 0 20%;
+    }
+
+    @media(min-width: grav-breakpoint(medium)) {
+      text-align: left;
+      max-width: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    > span:first-of-type {
+      display: block;
+    }
+
+    svg {
+      margin-top: 0;
+      width: 100%;
+
+      @media(min-width: grav-breakpoint(medium)) {
+        max-width: $wipdig-logo-width + px;
+      }
+
+      &:first-of-type {
+        width: 100%;
+      }
+
+      &:last-of-type {
+        width: ($designit-logo-width / $wipdig-logo-width) * 100%;
+        max-width: $designit-logo-width + px;
+      }
+    }
+  }
 }
 
 
