@@ -1,6 +1,6 @@
 import React from "react";
 import WiproDigitalLogoSvg from "./wiproDigitalLogoSvg";
-import DesignitSvg from "./DesignitSvg";
+import DesignitSvg from "./designitSvg";
 
 const Footer = () => (
   <footer className="grav-c-page-footer">
