@@ -59,8 +59,8 @@ const Contact = () => {
   };
 
   return (
-    <section>
-      <div className="contact" data-gtm-track="contact-form">
+    <section className="contact">
+      <div data-gtm-track="contact-form">
         <section className="grav-o-full-bleed__content grav-u-pt-xxl grav-u-pb-xxl">
           <h2 className="grav-u-text-centered">Let's talk</h2>
           <div className="contact__intro">

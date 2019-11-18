@@ -5,6 +5,7 @@ import Hero from "../components/hero";
 import Phases from "../components/phases";
 import Outcomes from "../components/outcomes";
 import Strategy from "../components/strategy";
+import WhatsNext from "../components/whatsNext";
 import Contact from "../components/contact";
 import Quote from "../components/quote";
 
@@ -16,6 +17,7 @@ const IndexPage = () => (
     <Team />
     <Quote />
     <Phases />
+    <WhatsNext />
     <Contact />
   </Layout>
 );
