@@ -3,7 +3,6 @@
 main {
   border-bottom: 5px solid;
   @include grav-color-apply("border-color", "b", "control-active", true);
-
 }
 
 .categoryText {
