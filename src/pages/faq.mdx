@@ -33,31 +33,35 @@ import { Element, animateScroll as scroll } from "react-scroll";
     <Cycle7LogoSvg />
   </div>
 
-  <ul className="grav-o-reset-list">
+  <ul id="c7-questions" className="grav-o-reset-list">
     {props.pageContext.frontmatter.faqs.map((faq, index) => {
       return (
-        <li key={index}><ScrollLink to={`faq-q${index}`} href={`#faq${index}`} duration={500} smooth={true} offset={-80}>{faq.q}</ScrollLink></li>
+        <li key={index}><ScrollLink to={`faq${index}`} href={`#faq${index}`} duration={500} smooth={true} offset={-80}>{faq.q}</ScrollLink></li>
       )
     })}
   </ul>
   <article className="grav-u-pb-xl">
     {props.pageContext.frontmatter.faqs.map((faq, index) => {
       return (
-        <div key={`faq-a${index}`}>
-          <h3 id={`faq${index}`}>{faq.q}</h3>
+        <div key={`faq-a${index}`} id={`faq${index}`}>
+          <h3>{faq.q}</h3>
           <p>{faq.a}</p>
           {faq.list && faq.list.length ? (
-            <ul>
-            {
-              faq.list && faq.list.map((li, index) => {
-                return (
-                  <li key={li}>{li}</li>
-                )
-              })
-            }
-          </ul>
+            <>
+              <ul>
+              {
+                faq.list && faq.list.map((li, index) => {
+                  return (
+                    <li key={li}>{li}</li>
+                  )
+                })
+              }
+            </ul>
+            </>
           ) : null}
-         
+          <div>
+            <ScrollLink to="c7-questions" href="#c7-questions" duration={500} smooth={true} offset={-80}>Back to top</ScrollLink>
+          </div>
         </div>
       )
     })}

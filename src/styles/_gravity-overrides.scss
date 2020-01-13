@@ -120,3 +120,9 @@ body>header .grav-c-toggle-menu[aria-pressed='false']~.grav-c-nav-menu,
 .grav-u-mt-xxl {
   margin-top: grav-sp-calc(3) !important;
 }
+
+// We don't need the visited link colour to be different
+
+a[href]:visited:not(:hover):not(:focus) {
+  color: inherit;
+}

@@ -11,7 +11,7 @@ import { StaticQuery, graphql } from "gatsby";
 import HeaderHome from "./headerHome";
 import Footer from "./footer";
 import Helmet from "react-helmet";
-import { animateScroll as scroll } from "react-scroll";
+import ScrollToTop from "../utils/ScrollToTop";
 
 class LayoutHome extends React.Component {
   constructor(props) {
@@ -20,10 +20,6 @@ class LayoutHome extends React.Component {
       showScollToTop: false
     };
   }
-
-  scrollToTop = () => {
-    scroll.scrollToTop();
-  };
 
   scrollCalc = () => {
     const winHeight = window.innerHeight;
@@ -73,12 +69,11 @@ class LayoutHome extends React.Component {
             {this.state.showScollToTop ? (
               <button
                 className="grav-c-page-footer__back-to-top"
-                onClick={this.scrollToTop}
+                onClick={ScrollToTop}
               >
-                {" "}
-                Back to top{" "}
+                Back to top
               </button>
-            ) : null}{" "}
+            ) : null}
           </>
         )}
       />
