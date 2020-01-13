@@ -1,6 +1,5 @@
-#hero-logo-lockup {
-  max-width: 400px;
-  fill: var(--grav-co-grp-b-control-emphasis);
+#hero-logo-lockup > svg {
+  margin: 0 30px;
 }
 
 .hero-heading {
@@ -12,14 +11,27 @@
   overflow: hidden;
   padding: 0;
   position: absolute;
+
+  + p {
+    font-weight: bold;
+  }
 }
 
-.grav-c-hero .grav-c-hero__container {
-  max-width: 40rem;
+.grav-c-hero  {
+  &__container {
+    max-width: 40rem;
+  }
+  
+  &--is-home {
+    .hero-dots {
+      height: 30vw;
+    }
+  }
 }
 
 .hero-dots {
   width: 100%;
-  height: 300px;
+  margin: 0 auto;
+  max-height: 300px;
   background: url(../images/dots.svg) fixed;
 }

@@ -1,5 +1,3 @@
-const eyeglass = require('eyeglass');
-
 module.exports = {
   siteMetadata: {
     title: `Cycle 7`,
@@ -7,14 +5,14 @@ module.exports = {
     author: `@buildit_tech`,
   },
   plugins: [
-    // {
-    //   resolve: `gatsby-source-filesystem`,
-    //   options: {
-    //     name: `markdown-pages`,
-    //     path: `${__dirname}/src/markdown-pages`,
-    //   },
-    // },
-    // `gatsby-transformer-remark`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `pages`,
+        path: `${__dirname}/src/pages/`,
+      },
+    },
+    `gatsby-plugin-mdx`,
     {
       resolve: "gatsby-plugin-google-tagmanager",
       options: {
@@ -48,12 +46,11 @@ module.exports = {
         background_color: `#FFFFFF`,
         theme_color: `#008d7c`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`,
+        icon: `src/images/cycle-7-icon.png`,
       },
     },
     {
-      resolve: "gatsby-plugin-sass",
-      options: eyeglass()
+      resolve: "gatsby-plugin-sass"
     }
   ],
 }

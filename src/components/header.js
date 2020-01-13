@@ -1,94 +1,41 @@
 import React, { Component } from "react";
-import PropTypes from "prop-types";
-import { Link } from "react-scroll";
+import { Link } from "gatsby";
+import { navigate } from '@reach/router';
 
 class Header extends Component {
-  handleSetActive = to => {
-    console.log(to);
-  };
+  contactClick = (e) => {
+    e.preventDefault();
+    navigate('/#contact');
+  }
 
   render() {
     return (
       <header className="grav-c-page-header grav-c-page-header--sticky">
         <div>
-          <div class="grav-c-page-header__logo">
-            LOGO?
-          </div>
-          <button class="grav-c-toggle-menu" type="button" aria-pressed="false" aria-label="Toggle navigation menu">
-            <span class="grav-c-toggle-menu__icon"></span>
+          <button
+            className="grav-c-toggle-menu"
+            type="button"
+            aria-pressed="false"
+            aria-label="Toggle navigation menu"
+          >
+            <span className="grav-c-toggle-menu__icon"></span>
           </button>
-          <nav class="grav-c-nav-menu">
+
+          <nav className="grav-c-nav-menu">
             <ul>
               <li>
-                <Link
-                  activeClass="active"
-                  to="outcomes"
-                  spy={true}
-                  smooth={true}
-                  offset={50}
-                  duration={500}
-                  onSetActive={this.handleSetActive}
-                >
-                  Outcomes
+                <Link className="grav-c-nav-link" to="/">
+                <svg width="76" height="17" xmlns="http://www.w3.org/2000/svg"><path d="M6.24 9.5l8.672 4.878.872.49-.98 1.744-.872-.49-12-6.75L.382 8.5l1.55-.872 12-6.75.871-.49.98 1.743-.87.49L6.238 7.5h68.934v2H6.239z" fillRule="nonzero"/></svg>
+                  Home
                 </Link>
               </li>
-              <li>
-                <Link
-                  activeClass="active"
-                  to="strategy"
-                  spy={true}
-                  smooth={true}
-                  offset={50}
-                  duration={500}
-                  onSetActive={this.handleSetActive}
-                >
-                  Strategy
-                </Link>
-              </li>
-              <li>
-                <Link
-                  activeClass="active"
-                  to="team"
-                  spy={true}
-                  smooth={true}
-                  offset={50}
-                  duration={500}
-                  onSetActive={this.handleSetActive}
-                >
-                  The team
-                </Link>
-              </li>
-              <li>
-                <Link
-                  activeClass="active"
-                  to="process"
-                  spy={true}
-                  smooth={true}
-                  offset={50}
-                  duration={500}
-                  onSetActive={this.handleSetActive}
-                >
-                  The process
-                </Link>
-              </li>
-              <li className="grav-c-nav-menu__hero">
-                <Link
-                  activeClass="active"
-                  to="contact"
-                  spy={true}
-                  smooth={true}
-                  offset={50}
-                  duration={500}
-                  onSetActive={this.handleSetActive}
-                >
-                  Get in touch
-                </Link>
-              </li>
+              <li><a className="grav-c-nav-link" href="/#contact" onClick={this.contactClick}>Contact Us</a></li>
             </ul>
           </nav>
         </div>
       </header>
-    )};      
+    );
+  }
 }
 
 export default Header;

@@ -27,11 +27,20 @@ const Layout = ({ children }) => (
       <>
         <Helmet
           bodyAttributes={{
-            class: "grav-o-full-bleed"
+            class: "grav-u-color-scheme-teal-white grav-o-full-bleed"
           }}
-        />
+        >
+          <title>{data.site.siteMetadata.title}</title>
+        </Helmet>
+
         <Header siteTitle={data.site.siteMetadata.title} />
-        <main>{children}</main>
+        <main>
+          <div className="className=">
+            <div className="grav-o-full-bleed__content">
+              {children}
+            </div>
+          </div>
+        </main>
         <Footer />
       </>
     )}

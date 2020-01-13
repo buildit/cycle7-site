@@ -5,27 +5,27 @@
 */
 
 // === Settings layer ===
-@import "gravity-ui-web/00-settings/settings.all";
+@import "~@buildit/gravity-ui-web/src/sass/00-settings/settings.all.scss";
 
 // === Tools layer ===
-@import "gravity-ui-web/01-tools/tools.all";
+@import "~@buildit/gravity-ui-web/src/sass/01-tools/tools.all";
 
 // === Generic layer ===
-@import "gravity-ui-web/02-generic/generic.all";
+@import "~@buildit/gravity-ui-web/src/sass/02-generic/generic.all";
 
 // === Elements layer ===
-@import "gravity-ui-web/03-elements/elements.all";
+@import "~@buildit/gravity-ui-web/src/sass/03-elements/elements.all";
 
 // === Objects layer ===
-@import "gravity-ui-web/04-objects/objects.all";
+@import "~@buildit/gravity-ui-web/src/sass/04-objects/objects.all";
 @import "layouts.scss";
 @import "media.scss";
 
 // === Components layer ===
-@import "gravity-ui-web/05-components/components.all";
+@import "~@buildit/gravity-ui-web/src/sass/05-components/components.all";
 
 // === Utilities layer ===
-@import "gravity-ui-web/06-utilities/utilities.all";
+@import "~@buildit/gravity-ui-web/src/sass/06-utilities/utilities.all";
 
 // === Cycle7 styles ===
 @import "cycle7-theme.scss";
@@ -39,3 +39,5 @@
 @import "strategy.scss";
 @import "contact.scss";
 @import "phases.scss";
+@import "whatsnext.scss";
+@import "quote.scss";

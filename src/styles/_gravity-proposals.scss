@@ -4,11 +4,93 @@
   position: fixed;
   top: 0;
   width: 100%;
-  background-color: --grav-co-grp-a-neutral;
+  background-color: var(--grav-co-grp-a-neutral);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
   z-index: 100;
+
+  .grav-c-nav-menu {
+    width: 100%;
+
+    > ul {
+      width: inherit;
+    }
+  }
+
+  ul {
+    justify-content: space-between;
+
+    .grav-c-nav-link {
+      padding: 0.5em 0.75em;
+
+      svg {
+        margin-right: $grav-sp-m;
+      }
+
+      &:hover {
+        svg {
+          fill: var(--grav-co-grp-b-control-emphasis);
+        }
+      }
+    }
+  }
 }
 
-.grav-c-nav-menu__hero {
+.grav-c-nav-menu--active {
+  box-shadow: inset 0 -3px 0 var(--grav-co-grp-b-control-emphasis);
+}
+
+.grav-c-nav-menu__hero > a[href]:link,
+.grav-c-nav-menu__hero > a[href]:visited {
   background: var(--grav-co-grp-b-control-emphasis);
-  color: --grav-co-grp-a-neutral;
+  color: white;
+}
+
+//Remove list bullet points/padding
+.grav-u-list-unstyled {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+// Temporary overrides, add functions to utilities to handle breakpoints
+.grav-u-pb-xxl {
+  padding-bottom: 2rem !important;
+
+  @media (min-width: grav-breakpoint(small)) {
+    padding-bottom: 3rem !important;
+  }
+  @media (min-width: grav-breakpoint(medium)) {
+    padding-bottom: 3.5rem !important;
+  }
+  @media (min-width: grav-breakpoint(large)) {
+    padding-bottom: 4rem !important;
+  }
+}
+
+.grav-u-pt-xxl {
+  padding-top: 2rem !important;
+
+  @media (min-width: grav-breakpoint(small)) {
+    padding-top: 3rem !important;
+  }
+  @media (min-width: grav-breakpoint(medium)) {
+    padding-top: 3.5rem !important;
+  }
+  @media (min-width: grav-breakpoint(large)) {
+    padding-top: 4rem !important;
+  }
+}
+
+dl.faq button {
+  margin: 0;
+  padding: 0;
+  margin-top: 1em;
+  font-weight: bold;
+  font-size: 110%;
+  border: thin solid transparent;
+  background-color: transparent;
+  padding-left: 0.125em;
+}
+
+dl.faq .desc {
+  display: none;
 }

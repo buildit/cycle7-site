@@ -1,43 +1,53 @@
-.team-list {
-  list-style: none;
-}
+$team-circle-size: 18em;
 
-.team-tick-icon {
-  max-width: 40px;
-  margin-top: -5px;
+.team-makeup {
+  position: relative;
 
-  @media (min-width: grav-breakpoint(medium)) {
-    display: block;
-    margin: 0 auto 30px auto;
-    max-width: 75px;
+  &:before {
+    content: "";
+    position: absolute;
+    border: 15px solid #008d7c;
+    border-radius: 50%;
+    opacity: 0.15;
+    height: calc(100% + #{$grav-sp-m});
+    width: $team-circle-size;
+    margin-left: calc(-#{$team-circle-size} / 2 - #{$grav-sp-xl});
+    left: 0;
+    top: -1.5rem;
+    z-index: 0;
+
+    @media (min-width: grav-breakpoint(small)) {
+      top: 50%;
+      left: calc(50% - #{$grav-sp-m});
+      height: $team-circle-size;
+      width: $team-circle-size;
+      margin-left: -($team-circle-size / 2);
+      margin-top: calc(-#{$team-circle-size} / 2 - #{$grav-sp-l});
+    }
   }
-}
 
-.team-border-left {
-  border-left: 1px solid var(--grav-co-grp-b-control-emphasis);
-  padding: 0 40px;
-}
+  div {
+    padding: $grav-sp-s 0;
+    margin-bottom: $grav-sp-l;
+    position: relative;
+    background: white;
+    z-index: 10;
 
-.team-members {
-  color: var(--grav-co-grp-b-control-emphasis);
-}
+    @media (min-width: grav-breakpoint(small)) {   
+      background-clip: content-box;
+      padding: 0;
 
-.team-text-right {
-  text-align: right;
-  padding: 0 40px;
-}
+      &:nth-child(odd) {
+        text-align: right;
+      }
+    }
 
-.team-no-bullets,
-.team-no-bullets li {
-  list-style: none;
-  padding: 0;
-}
+    @media (min-width: grav-breakpoint(extra-large)) {
+      padding: 0 $grav-sp-xl;
+    }
 
-.team-left-col {
-  text-align: right;
-  padding-right: 40px;
-}
-
-.team-right-col {
-  padding-left: 40px;
+    > * {
+      padding: 0 1rem;
+    }
+  }
 }

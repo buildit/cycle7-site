@@ -1,9 +1,8 @@
 /* Paterns or overrides that are very specific to Cycle7 site MVP */
 
-.contentCard {
-  box-sizing: border-box;
-  border-radius: 15px;
-  padding: 1rem;
+main {
+  border-bottom: 5px solid;
+  @include grav-color-apply("border-color", "b", "control-active", true);
 }
 
 .categoryText {
@@ -81,10 +80,13 @@ h4 {
   }
 }
 
-.c7-phase-2 .c7-graphic {
+.grav-c-nav-menu ul li:nth-child(4) {
   display: flex;
+  flex-grow: 1;
+  justify-content: flex-end;
+}
 
-  > img {
-    align-self: center;
-  }
+.c7-logo {
+  fill: var(--grav-co-grp-b-control-emphasis);
+  max-width: 400px;
 }
