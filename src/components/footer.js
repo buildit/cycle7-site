@@ -17,7 +17,7 @@ const Footer = () => (
         </span>
       </p>
       <p>
-        © {2020} <strong>Wipro Limited</strong>. All rights reserved.
+        © {year} <strong>Wipro Limited</strong>. All rights reserved.
       </p>
     </div>
   </footer>
