@@ -5,8 +5,7 @@ $designit-logo-width: 170;
    or raised as Github issues in Gravity */
 
 /* Proper fix not yet in Gravity Next */
-body>div:first-of-type,
-main {
+body > header + *, .grav-c-page-header + * {
   margin-top: 0;
 }
 
@@ -83,10 +82,23 @@ main {
   }
 
   &__back-to-top {
-    position: fixed;
-    bottom: 1rem;
-    right: 1rem;
+    float: right; // Bit hacky but serves to align to the right and take the button out of the flow
+    position: sticky;
+    bottom: $grav-sp-m;
+    height: 2.5rem;
+    width: 2.5rem;
+    margin-top: $grav-sp-m;
+    margin-right: $grav-sp-m;
+    border: none;
+    border-radius: 50%;
+    color: white;
+    background-color: var(--grav-co-grp-b-control-emphasis);
     z-index: 100;
+
+    &:hover {
+      background-color: var(--grav-co-grp-b-control-emphasis);
+      color: white;
+    }
   }
 }
 
@@ -99,17 +111,32 @@ main {
 }
 
 // To allow for hero nav item
-body>header .grav-c-toggle-menu[aria-pressed]~.grav-c-nav-menu,
-body>header .grav-c-toggle-menu[aria-pressed='false']~.grav-c-nav-menu,
-.grav-c-page-header .grav-c-toggle-menu[aria-pressed]~.grav-c-nav-menu,
-.grav-c-page-header .grav-c-toggle-menu[aria-pressed='false']~.grav-c-nav-menu,
+body > header .grav-c-toggle-menu[aria-pressed] ~ .grav-c-nav-menu,
+body > header .grav-c-toggle-menu[aria-pressed='false'] ~ .grav-c-nav-menu,
+.grav-c-page-header .grav-c-toggle-menu[aria-pressed] ~ .grav-c-nav-menu,
+.grav-c-page-header .grav-c-toggle-menu[aria-pressed='false'] ~ .grav-c-nav-menu,
 .grav-c-page-header__logo {
   margin: 0;
 }
 
-.grav-c-page-header__logo,
-.grav-c-page-header > div {
-  padding-bottom: 0;
+.grav-c-nav-menu .grav-c-nav-link > svg {
+  display: none;
+
+  @media (max-width: grav-breakpoint(small)) {
+    display: inline;
+  }
+}
+
+
+
+
+  .grav-c-page-header__logo,
+  .grav-c-page-header > div {
+    padding: $grav-sp-s 0;
+
+    @media(min-width: grav-breakpoint(medium)) {
+      padding: 0;
+  }
 }
 
 // Temp fix until next release
@@ -122,7 +149,6 @@ body>header .grav-c-toggle-menu[aria-pressed='false']~.grav-c-nav-menu,
 }
 
 // Don't need the visited link colour to be different on the body of the site
-
 main a[href]:visited:not(:hover):not(:focus) {
   color: inherit;
 }

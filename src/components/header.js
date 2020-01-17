@@ -3,10 +3,24 @@ import { Link } from "gatsby";
 import { navigate } from '@reach/router';
 
 class Header extends Component {
+  constructor() {
+    super();
+
+    this.state = {
+      navIsPressed: false
+    };
+  }
+
+
   contactClick = (e) => {
     e.preventDefault();
     navigate('/#contact');
   }
+
+  toggleNav = () => {
+    this.setState({navIsPressed: true})
+  }
+
 
   render() {
     return (
@@ -15,8 +29,9 @@ class Header extends Component {
           <button
             className="grav-c-toggle-menu"
             type="button"
-            aria-pressed="false"
+            aria-pressed={this.state.navIsPressed}
             aria-label="Toggle navigation menu"
+            onClick={this.toggleNav }
           >
             <span className="grav-c-toggle-menu__icon"></span>
           </button>

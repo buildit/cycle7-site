@@ -6,6 +6,15 @@ const linkActiveClass = "grav-c-nav-menu--active";
 const linkOffset = -40;
 
 class HeaderHome extends Component {
+
+  constructor() {
+    super();
+
+    this.state = {
+      navIsPressed: false
+    };
+  }
+
   handleSetActive = to => {
     
     if (to === "contact") {
@@ -14,6 +23,14 @@ class HeaderHome extends Component {
       contactField.focus();
     }
   };
+  
+
+  toggleNav = () => {
+    this.setState({
+      navIsPressed: !this.state.navIsPressed
+    })
+  }
+
 
   render() {
     return (
@@ -22,8 +39,9 @@ class HeaderHome extends Component {
           <button
             className="grav-c-toggle-menu"
             type="button"
-            aria-pressed="false"
+            aria-pressed={this.state.navIsPressed}
             aria-label="Toggle navigation menu"
+            onClick={this.toggleNav}
           >
             <span className="grav-c-toggle-menu__icon"></span>
           </button>

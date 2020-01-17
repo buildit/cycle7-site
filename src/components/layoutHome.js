@@ -11,26 +11,34 @@ import { StaticQuery, graphql } from "gatsby";
 import HeaderHome from "./headerHome";
 import Footer from "./footer";
 import Helmet from "react-helmet";
-import ScrollToTop from "../utils/ScrollToTop";
+import { animateScroll as scroll } from "react-scroll";
 
 class LayoutHome extends React.Component {
   constructor(props) {
     super(props);
+
     this.state = {
       showScollToTop: false
     };
   }
 
-  scrollCalc = () => {
+
+  scrollToTop = () => {
+    console.log("TEST");
+    scroll.scrollToTop();
+  };
+
+  scrollCalc = () => {;
     const winHeight = window.innerHeight;
     const scrollY = window.scrollY;
 
-    scrollY > winHeight ? this.setState({
-        showScollToTop: true
-      })
-    : this.setState({
-        showScollToTop: false
-      });
+      scrollY > winHeight
+        ? this.setState({
+            showScollToTop: true
+          })
+        : this.setState({
+            showScollToTop: false
+          });
   };
 
   componentDidMount() {
@@ -65,15 +73,18 @@ class LayoutHome extends React.Component {
               <title> {data.site.siteMetadata.title} </title>{" "}
             </Helmet>
             <HeaderHome siteTitle={data.site.siteMetadata.title} />{" "}
-            <main> {children} </main> <Footer />
+            <main> {children} </main>
             {this.state.showScollToTop ? (
-              <button
-                className="grav-c-page-footer__back-to-top"
-                onClick={ScrollToTop}
-              >
-                Back to top
-              </button>
-            ) : null}
+                  <button
+                    type="button"
+                    className="grav-c-page-footer__back-to-top"
+                    onClick={ this.scrollToTop }
+                    aria-hidden="true"
+                  >
+                    ↑
+                  </button>
+                ) : null}
+              <Footer />
           </>
         )}
       />

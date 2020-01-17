@@ -1,12 +1,14 @@
 // Sticky header
 
 .grav-c-page-header--sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  background-color: var(--grav-co-grp-a-neutral);
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-  z-index: 100;
+  @media(min-width: grav-breakpoint(medium)) {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: var(--grav-co-grp-a-neutral);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    z-index: 100;
+  }
 
   .grav-c-nav-menu {
     width: 100%;
