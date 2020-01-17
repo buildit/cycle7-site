@@ -35,10 +35,8 @@ const Layout = ({ children }) => (
 
         <Header siteTitle={data.site.siteMetadata.title} />
         <main>
-          <div className="className=">
-            <div className="grav-o-full-bleed__content">
-              {children}
-            </div>
+          <div className="grav-o-full-bleed__content">
+            {children}
           </div>
         </main>
         <Footer />

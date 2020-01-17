@@ -23,14 +23,12 @@ class HeaderHome extends Component {
       contactField.focus();
     }
   };
-  
 
   toggleNav = () => {
     this.setState({
       navIsPressed: !this.state.navIsPressed
     })
   }
-
 
   render() {
     return (
@@ -45,7 +43,6 @@ class HeaderHome extends Component {
           >
             <span className="grav-c-toggle-menu__icon"></span>
           </button>
-
           <nav className="grav-c-nav-menu">
             <ul>
               <li>

@@ -5,7 +5,8 @@ $designit-logo-width: 170;
    or raised as Github issues in Gravity */
 
 /* Proper fix not yet in Gravity Next */
-body > header + *, .grav-c-page-header + * {
+body > header + *,
+.grav-c-page-header + * {
   margin-top: 0;
 }
 

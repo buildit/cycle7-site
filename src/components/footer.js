@@ -2,6 +2,9 @@ import React from "react";
 import WiproDigitalLogoSvg from "./wiproDigitalLogoSvg";
 import DesignitSvg from "./designitSvg";
 
+const date = new Date();
+const year = date.getFullYear();
+
 const Footer = () => (
   <footer className="grav-c-page-footer">
     <div>
@@ -14,7 +17,7 @@ const Footer = () => (
         </span>
       </p>
       <p>
-        © 2019 <strong>Wipro Limited</strong>. All rights reserved.
+        © {2020} <strong>Wipro Limited</strong>. All rights reserved.
       </p>
     </div>
   </footer>

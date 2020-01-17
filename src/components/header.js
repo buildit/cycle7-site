@@ -11,7 +11,6 @@ class Header extends Component {
     };
   }
 
-
   contactClick = (e) => {
     e.preventDefault();
     navigate('/#contact');
@@ -20,7 +19,6 @@ class Header extends Component {
   toggleNav = () => {
     this.setState({navIsPressed: true})
   }
-
 
   render() {
     return (
