@@ -23,7 +23,6 @@ class LayoutHome extends React.Component {
   }
 
   scrollToTop = () => {
-    console.log("TEST");
     scroll.scrollToTop();
   };
 
