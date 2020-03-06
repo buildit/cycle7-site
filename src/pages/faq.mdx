@@ -25,14 +25,15 @@ import Layout from "../components/layout";
 import Cycle7LogoSvg from "../components/cycle7LogoSvg";
 import * as Scroll from 'react-scroll';
 import { Link as ScrollLink} from 'react-scroll';
+import Link from 'gatsby-link';
 import { Element, animateScroll as scroll } from "react-scroll";
 
 <Layout>
   <>
-    <div className="grav-u-mt-xxl">
-      <Cycle7LogoSvg />
+    <div>
+      <Link to="/"><Cycle7LogoSvg /></Link>
     </div>
-    <h2 className="grav-u-pb-m">Frequently asked questions</h2>
+    <h2>Frequently asked questions</h2>
     <ul id="c7-questions" className="grav-o-reset-list">
       {props.pageContext.frontmatter.faqs.map((faq, index) => {
         return (

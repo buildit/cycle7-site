@@ -17,7 +17,9 @@ class Header extends Component {
   }
 
   toggleNav = () => {
-    this.setState({navIsPressed: true})
+    this.setState({
+      navIsPressed: !this.state.navIsPressed
+    })
   }
 
   render() {
@@ -38,7 +40,6 @@ class Header extends Component {
             <ul>
               <li>
                 <Link className="grav-c-nav-link" to="/">
-                <svg width="76" height="17" xmlns="http://www.w3.org/2000/svg"><path d="M6.24 9.5l8.672 4.878.872.49-.98 1.744-.872-.49-12-6.75L.382 8.5l1.55-.872 12-6.75.871-.49.98 1.743-.87.49L6.238 7.5h68.934v2H6.239z" fillRule="nonzero"/></svg>
                   Home
                 </Link>
               </li>

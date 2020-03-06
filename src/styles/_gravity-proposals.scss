@@ -2,6 +2,7 @@
 
 .grav-c-page-header--sticky {
   @media(min-width: grav-breakpoint(medium)) {
+    margin-bottom: 0;
     position: fixed;
     top: 0;
     width: 100%;
@@ -10,10 +11,18 @@
     z-index: 100;
   }
 
+  +main>*:first-of-type:not(.grav-c-hero--is-home) {
+    margin-top: calc(var(--grav-fs-base) * 2.5);
+
+    @media(min-width: grav-breakpoint(medium)) {
+      margin-top: calc((var(--grav-fs-base) * 2.5) * 2);
+    }
+  }
+
   .grav-c-nav-menu {
     width: 100%;
 
-    > ul {
+    >ul {
       width: inherit;
     }
   }
@@ -41,8 +50,8 @@
   box-shadow: inset 0 -3px 0 var(--grav-co-grp-b-control-emphasis);
 }
 
-.grav-c-nav-menu__hero > a[href]:link,
-.grav-c-nav-menu__hero > a[href]:visited {
+.grav-c-nav-menu__hero>a[href]:link,
+.grav-c-nav-menu__hero>a[href]:visited {
   background: var(--grav-co-grp-b-control-emphasis);
   color: white;
 }
@@ -60,9 +69,11 @@
   @media (min-width: grav-breakpoint(small)) {
     padding-bottom: 3rem !important;
   }
+
   @media (min-width: grav-breakpoint(medium)) {
     padding-bottom: 3.5rem !important;
   }
+
   @media (min-width: grav-breakpoint(large)) {
     padding-bottom: 4rem !important;
   }
@@ -74,9 +85,11 @@
   @media (min-width: grav-breakpoint(small)) {
     padding-top: 3rem !important;
   }
+
   @media (min-width: grav-breakpoint(medium)) {
     padding-top: 3.5rem !important;
   }
+
   @media (min-width: grav-breakpoint(large)) {
     padding-top: 4rem !important;
   }
