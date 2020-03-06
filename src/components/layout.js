@@ -34,7 +34,11 @@ const Layout = ({ children }) => (
         </Helmet>
 
         <Header siteTitle={data.site.siteMetadata.title} />
-        <main>{children}</main>
+        <main>
+          <div className="grav-o-full-bleed__content">
+            {children}
+          </div>
+        </main>
         <Footer />
       </>
     )}

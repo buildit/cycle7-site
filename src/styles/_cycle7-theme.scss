@@ -79,3 +79,14 @@ h4 {
     width: 31%;
   }
 }
+
+.grav-c-nav-menu ul li:nth-child(4) {
+  display: flex;
+  flex-grow: 1;
+  justify-content: flex-end;
+}
+
+.c7-logo {
+  fill: var(--grav-co-grp-b-control-emphasis);
+  max-width: 400px;
+}

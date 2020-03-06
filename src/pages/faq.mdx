@@ -1,0 +1,73 @@
+---
+title: Frequently Asked Questions
+path: /faq
+date: 2020-07-01
+faqs: 
+  - q: Why a 7 week process?
+    a: In our experience 7 weeks is enough time to successfully de-risk a proposition. If it was any shorter it wouldn’t allow enough time for iteration and pivoting. It also wouldn’t allow enough time to recruit key users to test with. A longer process inevitably ends up with more waste, the amount that is learnt quickly deteriorates and experiments can become over-engineered.
+  - q: What if longer than 7 weeks is required?
+    a: If we’ve assessed the proposition and feel it’s too complex for 7 weeks, we can consider running 2 or more Cycle 7 projects. They could be run simultaneously or staggered so that learnings from one can feed into the other.
+  - q: What makes it suitable for me?
+    a: "Cycle 7 is suitable for any proposition that requires a large amount of investmentment to get off the ground but still carries significant risk and uncertainty. Typical scenarios include:"
+    list:
+      - Lengthy traditional research has not been able to fully answer the important questions.
+      - There is only evidence that a proposition is desirable but little is known about the feasibility or viability.
+      - Stakeholders/investors require more evidence that a proposition has enough potential, such as validated hypotheses.
+  - q: A Design Sprint is just one week, so why not use that method?
+    a: Design Sprints can be a great way to get some of the answers to important business questions but often only at a very high level and more complicated questions are often avoided. Usually Cycle 7 teams require experts to be brought in and out and hard to reach people need to be interviewed. This can take time to organise; a shorter process would simply miss out critical nuggets of information.
+  - q: Will this deliver a prototype?
+    a: Creating a prototype of an end-to-end journey, to test with users, seems like a common sense approach. It can also feel like the natural stepping stone to creating an MVP. But you may end up building for the sake of it and miss answering the more difficult and important questions first. Instead, we build experiences that are carefully designed to test hypotheses. These experiences can sometimes form part of a user journey but usually it’s a proof of concept for each prioritised feature.
+  - q: Is it just for websites and apps?
+    a: Usually it’s for a digital proposition that has some form of UI but other flavours could be hardware or research based. Also, Voice and IoT devices are becoming more and more part of our lives, so these may replace a traditional UI in some cases.
+---
+
+import Layout from "../components/layout";
+import Cycle7LogoSvg from "../components/cycle7LogoSvg";
+import * as Scroll from 'react-scroll';
+import { Link as ScrollLink} from 'react-scroll';
+import Link from 'gatsby-link';
+import { Element, animateScroll as scroll } from "react-scroll";
+
+<Layout>
+  <>
+    <div>
+      <Link to="/"><Cycle7LogoSvg /></Link>
+    </div>
+    <h2>Frequently asked questions</h2>
+    <ul id="c7-questions" className="grav-o-reset-list">
+      {props.pageContext.frontmatter.faqs.map((faq, index) => {
+        return (
+          <li key={index}><ScrollLink to={`faq${index}`} href={`#faq${index}`} duration={500} smooth={true} offset={-80}>{faq.q}</ScrollLink></li>
+        )
+      })}
+    </ul>
+    <article className="grav-u-pb-xl">
+      {props.pageContext.frontmatter.faqs.map((faq, index) => {
+        return (
+          <div key={`faq-a${index}`} id={`faq${index}`}>
+            <h3>{faq.q}</h3>
+            <p>{faq.a}</p>
+            {faq.list && faq.list.length ? (
+              <>
+                <ul>
+                {
+                  faq.list && faq.list.map((li, index) => {
+                    return (
+                      <li key={li}>{li}</li>
+                    )
+                  })
+                }
+              </ul>
+              </>
+            ) : null}
+            <div>
+              <ScrollLink to="c7-questions" href="#c7-questions" duration={500} smooth={true} offset={-80}>
+                Back to top
+              </ScrollLink>
+            </div>
+          </div>
+        )
+      })}
+    </article>
+  </>
+</Layout>

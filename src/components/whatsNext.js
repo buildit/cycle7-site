@@ -1,7 +1,7 @@
 import React from "react";
 
 const WhatsNext = () => (
-  <section className="whatsnext grav-u-pt-xxl grav-u-pb-xxl">
+  <section className="whatsnext grav-u-pt-none grav-u-pb-xxl">
     <div className="whatsnext__inner grav-u-pb-xxl">
       <div
         className="grav-o-full-bleed__content grav-u-pt-xxl grav-u-pb-xxl"
